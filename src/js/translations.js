@@ -1,0 +1,437 @@
+export const i18nTranslations = {
+    en: {
+        // Navigation
+        nav_home: "Home",
+        nav_collaboration: "Collaboration",
+        nav_about: "About",
+        collab_subtitle: "Trusted by Top Brands & Institutions",
+        nav_contact: "Contact",
+
+        // Hero Section
+        hero_subtitle: "ThirtyOne Lab Official",
+        hero_title: "Custom Jerseys, Elevated",
+        hero_desc: "We make premium custom jerseys for sports clubs, corporate teams, and brands. Clean designs, quality fabrics.",
+        hero_btn_start: "Start Your Design",
+        hero_btn_catalog: "Browse Collection",
+        collab_title: "Trusted By",
+
+        // Tutorial
+        tut_next: "Next",
+        tut_step1_info: "Browse our templates, check material options, and get a quick quote.",
+        tut_step2_info: "Got your own design? Send it straight here.",
+        tut_step3_info: "Check material, cutting, and customization options here.",
+        tut_step4_info: "Switch between design collection tabs here.",
+        tut_step5_info: "Tap any product to see details.",
+        tut_step6_info: "Fill in your order details here. We'll send a draft to WhatsApp.",
+        tut_finish: "Done",
+        tut_popup_title: "Welcome to ThirtyOne Lab",
+        tut_popup_desc: "First time here? Want a quick tour of how things work?",
+        tut_popup_yes: "Yes, show me!",
+        tut_popup_no: "I'll explore on my own.",
+
+        // Process Section
+        process_tag: "How It Works",
+        process_title: "Order Your Custom Jersey",
+        step1_title: "Pick or Upload a Design",
+        step1_desc: "Choose from our collection or send your own sketch or mockup.",
+        step2_title: "Set Your Specs",
+        step2_desc: "Choose fabric, collar, print details - names, numbers, logos, sponsors. Everything.",
+        step3_title: "WhatsApp Us & Order",
+        step3_desc: "Use the quote builder to wrap up your order and send it straight to our team.",
+
+        // Shop / Catalog Section
+        shop_tag: "Lookbook",
+        shop_title: "Design Catalog",
+        shop_desc: "Tap any design to check specs or start building your quote.",
+        helpline_chat: "Chat with Us",
+        spec_material: "Material",
+        spec_cutting: "Cutting",
+        spec_necklines: "Necklines",
+        spec_printing: "Printing Details",
+        spec_sizecharts: "Size Charts",
+        spec_nameset: "Name Set",
+        spec_sponsor: "Sponsor Design",
+        spec_placement: "Placement Guide",
+        spec_size_shirt: "Shirt Sizes",
+        spec_size_pants: "Pants Sizes",
+        spec_size_muslimah: "Muslimah Sizes",
+        collections_title: "Pick Your Edition",
+        btn_collection: "COLLECTION DESIGN",
+        btn_year_2026: "2026 Collection",
+        btn_year_2025: "2025 Collection",
+        btn_wc: "Event Edition",
+        disclaimer_text: "*For visual reference only. Colors, logos, and text are fully customizable.",
+
+        // Categories
+        cat_all: "All",
+        cat_sports: "Sports",
+        cat_corporate: "Corporate",
+        cat_casual: "Casual",
+        cat_event: "Event",
+        cat_uniform: "Uniform",
+
+        // About Section
+        about_tag: "Since 2023",
+        about_title: "The Art of Custom Apparel",
+        about_desc1: "ThirtyOne Lab is a custom jersey and apparel shop based in Kajang, Selangor. We pair high-quality sports fabrics with clean, minimal designs - built for teams, clubs, and brands.",
+        about_desc2: "Every cut, stitch, and print is done with care. Because a jersey isn't just clothing. It's how your team shows up.",
+
+        // Contact Section
+        contact_tag: "Come Visit",
+        contact_title: "Drop By Our Shop",
+        contact_intro: "Want to feel the fabrics, talk through a design, or sort out sizing? Come in - we're happy to help you figure out your order.",
+        contact_location_title: "Our Location",
+        contact_email_title: "Email Us",
+        contact_wa_title: "WhatsApp Support",
+
+        // Footer
+        footer_rights: "Copyright © 2026 ThirtyOne Lab. All Rights Reserved.",
+        footer_tagline: "Wear With Pride.✨",
+
+        // Lightbox
+        btn_configure_quote: "Build Your Quote",
+
+        // Quote Builder Modal Common
+        qb_title: "Order Details",
+        qb_step_label: "Step",
+        qb_step_of: "of",
+        qb_yes: "Yes",
+        qb_no: "No",
+        qb_not_sure: "Not Sure Yet",
+        qb_estimate_qty: "Estimate Quantity",
+        qb_btn_back: "Back",
+        qb_btn_next: "Next",
+        qb_send_whatsapp: "Send to WhatsApp",
+
+        // Standard Quote Steps
+        qb_step1_title: "Design Selected",
+        qb_alter_prompt: "Need to tweak the design?",
+        qb_btn_next_qty: "Next: Quantity",
+
+        qb_step2_title: "Quantity",
+        qb_btn_next_material: "Next: Material",
+
+        qb_step3_title: "Material",
+        qb_btn_next_cutting: "Next: Cutting",
+
+        qb_step4_title: "Cutting",
+        qb_btn_next_neck: "Next: Neck/Collar",
+
+        qb_step5_title: "Neck / Collar",
+        qb_btn_next_sleeve: "Next: Sleeve",
+
+        qb_step6_title: "Sleeve",
+        qb_table_type: "Type",
+        qb_table_all: "All",
+        qb_table_fill: "Fill in",
+        qb_sleeve_short: "Short Sleeve",
+        qb_sleeve_long: "Long Sleeve (+RM5/pc)",
+        qb_sleeve_error: "Sleeve qty must match total order quantity.",
+        qb_btn_next_nameset: "Next: Name Set",
+
+        qb_step7_title: "Add-Ons (Name Set & Short Pants)",
+        qb_add_nameset_prompt: "Add Name Set? (+RM3/pc)",
+        qb_add_pants_prompt: "Add Short Pants?",
+        qb_btn_next_review: "Next: Review",
+
+        qb_step8_title: "Order Summary",
+
+        // Own Design Quote Modal
+        qb_own_title: "Custom Design Order",
+        qb_own_step1_title: "Design Option",
+        qb_own_step1_prompt: "Got your own design file or mockup ready?",
+        qb_own_upload_btn: "Upload Design / Reference",
+        qb_own_upload_hint: "Accepted: JPG, PNG, WEBP, PDF (Max 10MB)",
+        qb_own_no_file: "No file chosen yet",
+
+        // Summary Labels (STRICTLY IN ENGLISH AS INSTRUCTED)
+        sum_design: "Design:",
+        sum_quantity: "Quantity:",
+        sum_material: "Material:",
+        sum_cutting: "Cutting:",
+        sum_neck: "Neck/Collar:",
+        sum_sleeve: "Sleeve:",
+        sum_nameset: "Nameset:",
+        sum_shortpants: "Short Pants:",
+
+        // Version 3 Mobile-First Hub & Dedicated Modals
+        v3_hub_collection: "Collection Design",
+        v3_hub_event: "Event Edition",
+        v3_hub_material: "Material",
+        v3_hub_cutting: "Cutting",
+        v3_hub_neck: "Neck Lines",
+        v3_hub_printing: "Printing Details",
+        v3_hub_sizechart: "Size Chart",
+        v3_modal_collection_title: "Collection Design",
+        v3_modal_collection_subtitle: "Explore our curated catalog of premium designs",
+        v3_modal_event_title: "Event Edition",
+        v3_modal_event_subtitle: "Tournament and special edition jersey series",
+        v3_modal_material_title: "Fabric & Material",
+        v3_modal_material_subtitle: "High-performance sports and corporate fabrics",
+        v3_modal_cutting_title: "Jersey Cutting",
+        v3_modal_cutting_subtitle: "Silhouettes and fits for every activity",
+        v3_modal_neck_title: "Necklines & Collars",
+        v3_modal_neck_subtitle: "Pick the collar style that suits you best",
+        v3_modal_printing_title: "Printing Details",
+        v3_modal_printing_subtitle: "Name set, sponsor layout & placement guide",
+        v3_modal_sizechart_title: "Size Charts",
+        v3_modal_sizechart_subtitle: "Official sizing guide (Inches)",
+        v3_tab_nameset: "Name Set",
+        v3_tab_sponsor: "Sponsor Design",
+        v3_tab_guide: "Placement Guide",
+        v3_tab_shirt: "Shirt Sizes",
+        v3_tab_pants: "Pants Sizes",
+        v3_tab_muslimah: "Muslimah Sizes",
+        v3_disclaimer_title: "✦ 100% FULLY CUSTOMIZABLE",
+        v3_disclaimer_desc: "This is a visual reference only. Colors, logos, collar, sleeves, cutting, and fabric can all be changed to fit your needs.",
+        v3_btn_copy_image: "Copy Mockup Image",
+        v3_btn_copied: "Copied to Clipboard!",
+        v3_btn_whatsapp_chat: "Ask via WhatsApp",
+        v3_toast_copied: "Mockup copied! Paste it straight into WhatsApp.",
+        v3_toast_copy_failed: "Image ready. Long-press to copy.",
+        v3_multi_img_indicator: "Swipe for more angles",
+        v3_close_modal: "Close",
+        v3_back_to_hub: "Back",
+        v3_tap_to_close: "Tap anywhere to close",
+        v3_zoom_hint: "Pinch to zoom (2 fingers)",
+
+        // Material specs
+        spec_recommend_label: "Recommended",
+        mat_eyelet_desc: "Eyelet 160gsm is lightweight and breathable — dries fast and keeps colors vivid. A solid all-rounder for any type of jersey.",
+        mat_eyelet_rec: "Sports • Corporate • Casual • Uniform • Event",
+        mat_diamond_desc: "Diamond 160gsm has a stylish diamond texture that wicks sweat fast. Great breathability and vivid print colors that last.",
+        mat_diamond_rec: "Sports • Corporate • Casual • Uniform • Event",
+        mat_lycra_desc: "Lycra 280gsm is thicker, stretchier, and more durable. Gives a neat, snug fit — great for formal teamwear and indoor sports.",
+        mat_lycra_rec: "Sports (Indoor) • Corporate • Casual • Event",
+        mat_interlock_desc: "Interlock 160gsm is smooth, stretchy, and durable. Comfortable, breathable, and holds print colors well without cracking.",
+        mat_interlock_rec: "Sports • Corporate • Casual • Uniform • Event",
+        mat_mini_eyelet_desc: "Mini Eyelet 160gsm has tiny holes for extra airflow and fast sweat drying. Soft, durable, and keeps colors bright.",
+        mat_mini_eyelet_rec: "Sports • Corporate • Casual • Uniform • Event",
+        mat_rjpk_desc: "RJPK 180gsm sits between lightweight and heavy — structured but still soft and breathable. Great for premium team jerseys.",
+        mat_rjpk_rec: "Sports • Corporate • Casual • Uniform • Event",
+        mat_mesh_desc: "Mesh 230gsm has a classic net texture for maximum airflow. Tough, quick-drying, and keeps colors sharp. Built for the heat.",
+        mat_mesh_rec: "Sports • Casual • Event",
+        mat_popcorn_desc: "Popcorn 160gsm has a unique raised knit texture for extra breathability. Soft, light, and handles sweat and print colors well.",
+        mat_popcorn_rec: "Sports • Corporate • Casual • Uniform • Event"
+    },
+
+    ms: {
+        // Navigation
+        nav_home: "Laman Utama",
+        nav_collaboration: "Kolaborasi",
+        nav_about: "Tentang Kami",
+        collab_subtitle: "Dipercayai oleh Jenama & Institusi Terkemuka",
+        nav_contact: "Hubungi Kami",
+
+        // Hero Section
+        hero_subtitle: "ThirtyOne Lab Official",
+        hero_title: "Jersi & Baju Custom Eksklusif",
+        hero_desc: "Kami buat jersi custom premium untuk kelab sukan, pasukan korporat, dan jenama anda. Design bersih, kain berkualiti.",
+        hero_btn_start: "Mula Design Anda",
+        hero_btn_catalog: "Lihat Koleksi",
+        collab_title: "Dipercayai Oleh",
+
+        // Tutorial
+        tut_next: "Seterusnya",
+        tut_step1_info: "Tengok koleksi template, pilih material, dan dapatkan sebut harga.",
+        tut_step2_info: "Ada design sendiri? Hantar terus di sini.",
+        tut_step3_info: "Tengok material, potongan, dan pilihan lain di sini.",
+        tut_step4_info: "Tukar tab koleksi design kat sini.",
+        tut_step5_info: "Tap mana-mana produk untuk tengok details.",
+        tut_step6_info: "Isi details tempahan anda di sini. Kami akan hantar draf ke WhatsApp.",
+        tut_finish: "Selesai",
+        tut_popup_title: "Selamat Datang ke ThirtyOne Lab",
+        tut_popup_desc: "Pertama kali kat sini? Nak tengok sekejap macam mana website ni berfungsi?",
+        tut_popup_yes: "Ya, tunjukkan!",
+        tut_popup_no: "Tak payah, saya explore sendiri.",
+
+        // Process Section
+        process_tag: "Cara Tempah",
+        process_title: "Order Baju Custom Anda",
+        step1_title: "Pilih atau Muat Naik Design",
+        step1_desc: "Pilih dari koleksi kami atau hantar lakaran/mockup design anda sendiri.",
+        step2_title: "Tetapkan Spec Baju",
+        step2_desc: "Pilih kain, kolar, cetakan nama, nombor, logo, dan penaja. Semua boleh diubah.",
+        step3_title: "WhatsApp & Tempah",
+        step3_desc: "Guna quote builder untuk susun details tempahan dan hantar terus ke team kami.",
+
+        // Shop / Catalog Section
+        shop_tag: "Koleksi Design",
+        shop_title: "Katalog Design Jersi",
+        shop_desc: "Tap mana-mana design untuk semak spesifikasi atau terus bina sebut harga.",
+        helpline_chat: "Chat Dengan Kami",
+        spec_material: "Material",
+        spec_cutting: "Cutting",
+        spec_necklines: "Jenis Kolar",
+        spec_printing: "Printing Details",
+        spec_sizecharts: "Carta Saiz",
+        spec_nameset: "Name Set",
+        spec_sponsor: "Design Penaja",
+        spec_placement: "Panduan Kedudukan",
+        spec_size_shirt: "Saiz Baju",
+        spec_size_pants: "Saiz Seluar",
+        spec_size_muslimah: "Saiz Muslimah",
+        collections_title: "Pilih Koleksi Anda",
+        btn_collection: "COLLECTION DESIGN",
+        btn_year_2026: "Koleksi 2026",
+        btn_year_2025: "Koleksi 2025",
+        btn_wc: "Event Edition",
+        disclaimer_text: "*Gambar untuk rujukan visual sahaja. Warna, logo, dan teks boleh diubah sepenuhnya.",
+
+        // Categories
+        cat_all: "Semua",
+        cat_sports: "Sukan",
+        cat_corporate: "Korporat",
+        cat_casual: "Kasual",
+        cat_event: "Event",
+        cat_uniform: "Uniform",
+
+        // About Section
+        about_tag: "Sejak 2023",
+        about_title: "Seni Pakaian Custom",
+        about_desc1: "ThirtyOne Lab ialah kedai jersi dan baju custom di Kajang, Selangor. Kami gabungkan kain sukan berkualiti dengan design minimalis - dibuat khas untuk pasukan, kelab, dan jenama.",
+        about_desc2: "Setiap potongan, jahitan, dan cetakan kami buat dengan serius. Sebab baju bukan sekadar pakaian. Ia cara pasukan anda tampil.",
+
+        // Contact Section
+        contact_tag: "Jom Lawat",
+        contact_title: "Singgah ke Kedai Kami",
+        contact_intro: "Nak rasa kain, bincang design, atau tanya pasal saiz? Datanglah - kami sedia bantu selesaikan tempahan anda.",
+        contact_location_title: "Lokasi Kedai",
+        contact_email_title: "Emel Kami",
+        contact_wa_title: "Sokongan WhatsApp",
+
+        // Footer
+        footer_rights: "Hak Cipta © 2026 ThirtyOne Lab. Hak Cipta Terpelihara.",
+        footer_tagline: "Wear With Pride.✨",
+
+        // Lightbox
+        btn_configure_quote: "Bina Sebut Harga",
+
+        // Quote Builder Modal Common
+        qb_title: "Details Tempahan",
+        qb_step_label: "Langkah",
+        qb_step_of: "daripada",
+        qb_yes: "Ya",
+        qb_no: "Tidak",
+        qb_not_sure: "Belum Pasti Lagi",
+        qb_estimate_qty: "Anggaran Kuantiti",
+        qb_btn_back: "Balik",
+        qb_btn_next: "Seterusnya",
+        qb_send_whatsapp: "Hantar ke WhatsApp",
+
+        // Standard Quote Steps
+        qb_step1_title: "Design Dipilih",
+        qb_alter_prompt: "Nak ubah suai design ni?",
+        qb_btn_next_qty: "Seterusnya: Kuantiti",
+
+        qb_step2_title: "Kuantiti",
+        qb_btn_next_material: "Seterusnya: Material",
+
+        qb_step3_title: "Jenis Kain",
+        qb_btn_next_cutting: "Seterusnya: Cutting",
+
+        qb_step4_title: "Cutting",
+        qb_btn_next_neck: "Seterusnya: Kolar",
+
+        qb_step5_title: "Jenis Kolar",
+        qb_btn_next_sleeve: "Seterusnya: Lengan",
+
+        qb_step6_title: "Jenis Lengan",
+        qb_table_type: "Jenis Lengan",
+        qb_table_all: "Semua Baju",
+        qb_table_fill: "Isi Kuantiti",
+        qb_sleeve_short: "Lengan Pendek",
+        qb_sleeve_long: "Lengan Panjang (+RM5/helai)",
+        qb_sleeve_error: "Jumlah kuantiti lengan kena sama dengan jumlah tempahan.",
+        qb_btn_next_nameset: "Seterusnya: Name Set",
+
+        qb_step7_title: "Add-On (Name Set & Seluar Pendek)",
+        qb_add_nameset_prompt: "Tambah Name Set? (+RM3/helai)",
+        qb_add_pants_prompt: "Tambah Seluar Pendek?",
+        qb_btn_next_review: "Seterusnya: Semakan",
+
+        qb_step8_title: "Ringkasan Tempahan",
+
+        // Own Design Quote Modal
+        qb_own_title: "Tempahan Design Sendiri",
+        qb_own_step1_title: "Pilihan Design",
+        qb_own_step1_prompt: "Ada fail design atau mockup sendiri?",
+        qb_own_upload_btn: "Muat Naik Design / Rujukan",
+        qb_own_upload_hint: "Format diterima: JPG, PNG, WEBP, PDF (Maks 10MB)",
+        qb_own_no_file: "Belum ada fail dipilih",
+
+        // Summary Labels (STRICTLY IN ENGLISH AS INSTRUCTED BY USER)
+        sum_design: "Design:",
+        sum_quantity: "Quantity:",
+        sum_material: "Material:",
+        sum_cutting: "Cutting:",
+        sum_neck: "Neck/Collar:",
+        sum_sleeve: "Sleeve:",
+        sum_nameset: "Nameset:",
+        sum_shortpants: "Short Pants:",
+
+        // WhatsApp Texts
+        wa_greeting: "Hai ThirtyOne Lab! Saya nak dapatkan sebut harga untuk tempahan baju ni:",
+        wa_closing: "Boleh bagi sebut harga terbaik untuk tempahan ni?",
+
+        // Version 3 Mobile-First Hub & Dedicated Modals
+        v3_hub_collection: "Collection Design",
+        v3_hub_event: "Event Edition",
+        v3_hub_material: "Material",
+        v3_hub_cutting: "Cutting",
+        v3_hub_neck: "Jenis Kolar",
+        v3_hub_printing: "Printing Details",
+        v3_hub_sizechart: "Carta Saiz",
+        v3_modal_collection_title: "Collection Design",
+        v3_modal_collection_subtitle: "Terokai koleksi design jersi premium kami",
+        v3_modal_event_title: "Event Edition",
+        v3_modal_event_subtitle: "Siri jersi edisi khas untuk tournament dan event",
+        v3_modal_material_title: "Kain & Material",
+        v3_modal_material_subtitle: "Kain sukan dan korporat berperforma tinggi",
+        v3_modal_cutting_title: "Cutting Jersi",
+        v3_modal_cutting_subtitle: "Pilih potongan yang sesuai dengan aktiviti anda",
+        v3_modal_neck_title: "Kolar & Leher",
+        v3_modal_neck_subtitle: "Pilih gaya kolar yang anda suka",
+        v3_modal_printing_title: "Printing Details",
+        v3_modal_printing_subtitle: "Name set, layout penaja & panduan kedudukan",
+        v3_modal_sizechart_title: "Carta Saiz",
+        v3_modal_sizechart_subtitle: "Panduan saiz rasmi (Inci)",
+        v3_tab_nameset: "Name Set",
+        v3_tab_sponsor: "Design Penaja",
+        v3_tab_guide: "Panduan Kedudukan",
+        v3_tab_shirt: "Saiz Baju",
+        v3_tab_pants: "Saiz Seluar",
+        v3_tab_muslimah: "Saiz Muslimah",
+        v3_disclaimer_title: "✦ 100% BOLEH DIUBAH SEPENUHNYA",
+        v3_disclaimer_desc: "Gambar ini untuk rujukan visual sahaja. Warna, logo, kolar, lengan, cutting, dan kain — semua boleh diubah ikut citarasa anda.",
+        v3_btn_copy_image: "Salin Gambar Mockup",
+        v3_btn_copied: "Gambar Disalin!",
+        v3_btn_whatsapp_chat: "Tanya via WhatsApp",
+        v3_toast_copied: "Mockup disalin! Tampal terus dalam WhatsApp.",
+        v3_toast_copy_failed: "Gambar sedia. Tekan lama untuk salin.",
+        v3_multi_img_indicator: "Swipe untuk sudut lain",
+        v3_close_modal: "Tutup",
+        v3_back_to_hub: "Balik",
+        v3_tap_to_close: "Tap mana-mana untuk tutup",
+        v3_zoom_hint: "Boleh zoom (Guna 2 jari)",
+
+        // Material specs
+        spec_recommend_label: "Rekomen",
+        mat_eyelet_desc: "Eyelet 160gsm ringan dan bernyawa — cepat kering dan warna kekal terang lama. Sesuai untuk pelbagai jenis jersi.",
+        mat_eyelet_rec: "Sukan • Korporat • Kasual • Uniform • Event",
+        mat_diamond_desc: "Diamond 160gsm ada tekstur berlian yang bergaya, serap peluh dengan pantas, dan bernyawa. Warna cetakan menyerlah dan tahan lama.",
+        mat_diamond_rec: "Sukan • Korporat • Kasual • Uniform • Event",
+        mat_lycra_desc: "Lycra 280gsm lebih tebal, sangat kenyal, dan tahan lasak. Potongan kemas dan kelihatan profesional — sesuai untuk jersi rasmi dan sukan indoor.",
+        mat_lycra_rec: "Sukan (Indoor) • Korporat • Kasual • Event",
+        mat_interlock_desc: "Interlock 160gsm licin, kenyal, dan tahan lasak. Selesa dipakai, bernyawa baik, dan warna cetakan tak mudah retak atau pudar.",
+        mat_interlock_rec: "Sukan • Korporat • Kasual • Uniform • Event",
+        mat_mini_eyelet_desc: "Mini Eyelet 160gsm ada liang halus untuk aliran udara lebih baik dan cepat kering. Lembut, tahan lasak, dan warna cetakan kekal cerah.",
+        mat_mini_eyelet_rec: "Sukan • Korporat • Kasual • Uniform • Event",
+        mat_rjpk_desc: "RJPK 180gsm ada ketebalan yang sederhana — terletak kemas tapi masih selesa dan bernyawa. Sesuai untuk jersi pasukan premium.",
+        mat_rjpk_rec: "Sukan • Korporat • Kasual • Uniform • Event",
+        mat_mesh_desc: "Mesh 230gsm ada tekstur jaring klasik untuk aliran udara maksimum. Tahan lasak, cepat kering, dan warna cetakan kekal tajam. Sesuai untuk cuaca panas.",
+        mat_mesh_rec: "Sukan • Kasual • Event",
+        mat_popcorn_desc: "Popcorn 160gsm ada tekstur rajutan unik untuk pengudaraan lebih baik. Ringan, lembut, dan warna cetakan kekal cerah lama.",
+        mat_popcorn_rec: "Sukan • Korporat • Kasual • Uniform • Event"
+    }
+};

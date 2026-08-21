@@ -1,0 +1,57 @@
+/* --- 6. SHOP CATALOG SECTION --- */
+.shop-section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shop-section-header h2 {
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.shop-section-header p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Store social container styled elegantly */
+.store-socials-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.store-socials-wrapper a {
+    font-size: 0.75rem;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    transition: var(--transition);
+}
+
+.store-socials-wrapper a:hover {
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.store-socials-wrapper a img {
+    height: 16px;
+    width: 16px;
+    object-fit: contain;
+}
+

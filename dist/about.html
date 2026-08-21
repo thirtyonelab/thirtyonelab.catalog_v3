@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==========================================
+       1. METADATA & SEO ASAS
+       ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About Us | ThirtyOne Lab</title>
+    <meta name="theme-color" content="#BA122B">
+    <link rel="apple-touch-icon" href="/testing/pwa-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ThirtyOneLab">
+    <meta name="description"
+        content="ThirtyOne Lab Official - Kedai cetak baju custom apparel specialist di Kajang, Selangor.">
+    <meta name="keywords"
+        content="ThirtyOne Lab, custom apparel, custom jersey, custom jersi, print jersey, cetak baju">
+    <link rel="icon" type="image/jpeg" href="Image/Favicon/Favicon Tab.webp">
+
+    <!-- ==========================================
+       2. OPEN GRAPH DATA
+       ========================================== -->
+    <meta property="og:title" content="ThirtyOne Lab Official Catalog" />
+    <meta property="og:description"
+        content="Discover our full range of custom apparel in one place. Order your favorite design now!" />
+    <meta property="og:image" content="https://amnhmb.github.io/thirtyonelabcatalog/Image/Favicon/Logo%20Favicon.webp" />
+    <meta property="og:url" content="https://amnhmb.github.io/thirtyonelabcatalog/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ThirtyOne Lab" />
+
+    <!-- ==========================================
+       2A. LOCAL BUSINESS SCHEMA (JSON-LD)
+       ========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ThirtyOne Lab",
+      "image": "https://amnhmb.github.io/thirtyonelabcatalog/Image/Favicon/Logo%20Favicon.webp",
+      "description": "ThirtyOne Lab Official - Kedai cetak baju custom apparel specialist di Kajang, Selangor.",
+      "@id": "https://amnhmb.github.io/thirtyonelabcatalog/#localbusiness",
+      "url": "https://amnhmb.github.io/thirtyonelabcatalog/",
+      "telephone": "+6011-2561 4436",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "26A, Jalan 1, Taman Bukit Cantik",
+        "addressLocality": "Kajang",
+        "addressRegion": "Selangor",
+        "postalCode": "43000",
+        "addressCountry": "MY"
+      },
+      "sameAs": [
+        "https://www.instagram.com/thirtyonelab",
+        "https://www.tiktok.com/@thirtyonelabofficial",
+        "https://www.facebook.com/thirtyonelab"
+      ]
+    }
+    </script>
+
+    <!-- ==========================================
+       3. FONTS & EXTERNAL STYLESHEET
+       ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script type="module" crossorigin src="/testing/assets/modulepreload-polyfill-Dezn_h7o.js"></script>
+  <script type="module" crossorigin src="/testing/assets/translations-CG-oXsJR.js"></script>
+  <script type="module" crossorigin src="/testing/assets/lang-p5F9JTIK.js"></script>
+  <link rel="stylesheet" crossorigin href="/testing/assets/translations-BwTigiJF.css">
+  <link rel="stylesheet" crossorigin href="/testing/assets/lang-DjtT-2dn.css">
+<link rel="manifest" href="/testing/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/testing/registerSW.js"></script></head>
+
+<body>
+    <div id="appContainer">
+
+    <!-- ==========================================
+       4. STICKY NAVIGATION BAR
+       ========================================== -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="header-left">
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            <a href="index.html" class="logo-link">
+                <img src="Image/Favicon/Logo Favicon.webp" alt="ThirtyOne Lab Logo" class="brand-logo">
+                <span class="brand-name"><span class="brand-thirtyone">THIRTYONE</span><span class="brand-lab">LAB</span><sup class="brand-registered">&reg;</sup></span>
+            </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="nav-item active" data-i18n="nav_about">About</a>
+                <a href="contact.html" class="nav-item" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="header-actions-mobile">
+                <div class="lang-switcher" title="Choose Language / Pilih Bahasa">
+                    <button class="lang-btn" id="langBtnEN" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" id="langBtnMS" onclick="setLanguage('ms')">BM</button>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <nav class="mobile-nav-menu">
+            <a href="index.html#v3Hub" class="mobile-nav-item" onclick="toggleMobileMenu()">Home</a>
+            <a href="about.html" class="mobile-nav-item" data-i18n="nav_about">About</a>
+            <a href="contact.html" class="mobile-nav-item" data-i18n="nav_contact">Contact</a>
+            <div class="mobile-collab-section">
+                <span class="mobile-collab-title" data-i18n="collab_title">Collaboration</span>
+                <div class="mobile-collab-logos">
+                    <img src="Image/Collaboration%20With%20(Customer)/AIA.webp" alt="AIA">
+                    <img src="Image/Collaboration%20With%20(Customer)/Air%20Asia.webp" alt="Air Asia">
+                    <img src="Image/Collaboration%20With%20(Customer)/Der%20Cabin.webp" alt="Der Cabin">
+                    <img src="Image/Collaboration%20With%20(Customer)/KKM.webp" alt="KKM">
+                    <img src="Image/Collaboration%20With%20(Customer)/Politeknik%20Nilai.webp" alt="Politeknik Nilai">
+                    <img src="Image/Collaboration%20With%20(Customer)/Setapak%20City.webp" alt="Setapak City">
+                    <img src="Image/Collaboration%20With%20(Customer)/Zero%20FC.webp" alt="Zero FC">
+                </div>
+            </div>
+        </nav>
+    </div>
+<main style="min-height: 80vh;">
+<!-- About Section -->
+    <section class="boutique-section about-section" id="about">
+        <div class="about-container contact-card">
+            <div class="about-text-content">
+                <span class="section-tag" data-i18n="about_tag">Since 2023</span>
+                <h2 class="section-title" data-i18n="about_title">The Art of Custom Apparel</h2>
+                <p data-i18n="about_desc1">ThirtyOne Lab is a custom apparel shop in Kajang, Selangor. We combine high-performance sports fabrics with clean, minimalist designs to create custom teamwear, uniforms, and streetwear.</p>
+                <p data-i18n="about_desc2">We design every layout, stitch pattern, and print option with care. Good apparel does more than keep you covered. It gives you the confidence of wearing gear that represents your team.</p>
+            </div>
+            <div class="about-image-collage">
+                <img src="Image/Favicon/Logo Header.webp" alt="ThirtyOne Lab Artistry" class="about-main-img">
+                <div class="about-logo-text">
+                    <span class="brand-name"><span class="brand-thirtyone">THIRTYONE</span><span class="brand-lab">LAB</span><sup class="brand-registered">&reg;</sup></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    </div>
+    
+    <script>
+        function toggleMobileMenu() {
+            const btn = document.getElementById('hamburgerBtn');
+            const overlay = document.getElementById('mobileNavOverlay');
+            if(btn && overlay) {
+                btn.classList.toggle('open');
+                overlay.classList.toggle('active');
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('hamburgerBtn');
+            if (btn) btn.addEventListener('click', toggleMobileMenu);
+        });
+    </script>
+</body>
+</html>
+

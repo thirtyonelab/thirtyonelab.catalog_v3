@@ -1,0 +1,28 @@
+/* ==========================================================================
+   THIRTYONE LAB BOUTIQUE - LUXURY MINIMALIST PALETTE (RED, WHITE, OFF-WHITE)
+   Zara / COS / Aritzia Inspired Refined Aesthetic
+   ========================================================================== */
+
+/* --- 1. DESIGN VARIABLES & FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
+
+:root {
+    --primary-red: #C51B27; /* Luxurious deep boutique red */
+    --primary-red-hover: #A1141E;
+    --primary-red-light: #FDF2F3;
+    --white: #FFFFFF;
+    --off-white-bg: #FAF9F6; /* Milk / Warm sand off-white background */
+    --off-white-card: #FFFFFF;
+    --text-dark: #111111;
+    --text-muted: #666666;
+    --text-light: #8E8B82;
+    --border-color: #E6E2DC; /* Soft warm gray border */
+    --border-color-hover: #C51B27;
+    --font-primary: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Montserrat', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+    --font-serif: 'Montserrat', sans-serif;
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+

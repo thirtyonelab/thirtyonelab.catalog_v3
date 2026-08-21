@@ -1,0 +1,186 @@
+/* --- 7. ELEGANT FILTER CONTROLS --- */
+.spec-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: var(--white);
+    padding: 20px 24px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.spec-buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.spec-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.spec-btn:hover {
+    color: var(--primary-red);
+}
+
+.spec-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: var(--primary-red);
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.spec-btn.active {
+    color: var(--primary-red);
+}
+
+.spec-btn.active::after {
+    transform: scaleX(1);
+}
+
+.spec-icon {
+    display: none; /* Hide cluttered icons for luxury minimalist feel */
+}
+
+/* Sub filter menus */
+.sub-spec-wrapper {
+    display: none;
+    width: 100%;
+    background-color: var(--off-white-bg);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sub-spec-wrapper.active {
+    display: block;
+}
+
+.sub-spec-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.sub-spec-btn {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 8px 18px;
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.sub-spec-btn:hover {
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.sub-spec-btn.active {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border-color: var(--primary-red);
+}
+
+.sub-spec-icon {
+    display: none;
+}
+
+/* Category Label */
+.section-label {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: center;
+    margin: 40px 0 24px 0;
+}
+
+/* Edition Toggle Row */
+.edition-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.edition-btn {
+    background-color: var(--white);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    padding: 12px 28px;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.edition-btn:hover {
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.edition-btn.active {
+    background-color: var(--text-dark);
+    color: var(--white);
+    border-color: var(--text-dark);
+}
+
+/* Specifically target the World Cup button active to give a luxury touch */
+.edition-btn.world-cup.active {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border-color: var(--primary-red);
+}
+
+.edition-btn, .sub-spec-btn {
+    position: relative;
+}
+
+.btn-new-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary-red, #C51B27);
+    color: var(--white, #FFF);
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 4px;
+    line-height: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    z-index: 10;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+}
+

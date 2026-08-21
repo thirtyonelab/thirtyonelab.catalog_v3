@@ -1,0 +1,109 @@
+/* ==========================================================================
+   20. DESKTOP COLLABORATION SECTION
+   ========================================================================== */
+
+/* Hide on mobile devices to preserve the 100% locked phone view */
+@media (max-width: 900px) {
+    .desktop-collaboration-section {
+        display: none !important;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 901px) {
+    .desktop-collaboration-section {
+        display: block;
+        width: 100%;
+        background-color: transparent; /* Removed white box */
+        padding: 5px 0 0 0; /* Minimized vertical padding */
+        overflow: hidden;
+        position: relative;
+        border: none; /* Removed line box */
+    }
+
+    .desktop-collab-container {
+        max-width: 650px; /* Aligned with v3-hub-section (red button width) */
+        margin: 0 auto;
+        padding: 0 16px; /* Matched v3-hub-section padding */
+        text-align: center;
+    }
+
+    .desktop-collab-title {
+        font-family: var(--font-primary, 'Inter', sans-serif);
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 5px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+
+    .desktop-collab-subtitle {
+        font-family: var(--font-secondary, 'Inter', sans-serif);
+        font-size: 0.65rem;
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 20px; /* Reduced margin */
+        font-weight: 500;
+    }
+
+    /* Infinite Marquee Animation Setup */
+    .desktop-collab-marquee {
+        width: 100%;
+        max-width: calc(650px - 32px); /* Exactly matches the button width */
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 0; /* Added padding to prevent crop on hover scale */
+        /* Fading edges */
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    }
+
+    .desktop-collab-track {
+        display: flex;
+        gap: 40px; /* Reduced gap to fix excessive spacing */
+        align-items: center;
+        width: max-content;
+        animation: marquee 30s linear infinite;
+        padding-left: 40px; /* spacing after the loop */
+    }
+
+    .desktop-collab-track:hover {
+        animation-play-state: paused;
+    }
+
+    .desktop-collab-logo {
+        height: 42px;
+        width: auto;
+        max-width: 105px;
+        object-fit: contain;
+        filter: grayscale(100%) opacity(0.6);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        cursor: pointer;
+    }
+
+    /* Desktop Spacing Overrides for v3 hub (Fix gaps) */
+    .v3-hub-section {
+        padding-top: 25px !important;
+    }
+
+    .v3-hub-socials {
+        margin-bottom: 10px !important;
+    }
+
+    .desktop-collab-logo:hover {
+        filter: grayscale(0%) opacity(1);
+        transform: scale(1.1);
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}

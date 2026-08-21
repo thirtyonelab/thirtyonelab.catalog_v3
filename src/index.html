@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==========================================
+       1. METADATA & SEO ASAS
+       ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ThirtyOne Lab Official</title>
+    <meta name="theme-color" content="#BA122B">
+    <link rel="apple-touch-icon" href="/pwa-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ThirtyOneLab">
+    <meta name="description"
+        content="ThirtyOne Lab Official - Kedai cetak baju custom apparel specialist di Kajang, Selangor.">
+    <meta name="keywords"
+        content="ThirtyOne Lab, custom apparel, custom jersey, custom jersi, print jersey, cetak baju">
+    <link rel="icon" type="image/jpeg" href="Image/Favicon/Favicon Tab.webp">
+
+    <!-- ==========================================
+       2. OPEN GRAPH DATA
+       ========================================== -->
+    <meta property="og:title" content="ThirtyOne Lab Official Catalog" />
+    <meta property="og:description"
+        content="Discover our full range of custom apparel in one place. Order your favorite design now!" />
+    <meta property="og:image" content="https://amnhmb.github.io/thirtyonelabcatalog/Image/Favicon/Logo%20Favicon.webp" />
+    <meta property="og:image" content="https://amnhmb.github.io/thirtyonelab.catalog_v3/Image/Favicon/Logo%20Favicon.webp" />
+    <meta property="og:url" content="https://amnhmb.github.io/thirtyonelab.catalog_v3/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ThirtyOne Lab" />
+
+    <!-- ==========================================
+       2A. LOCAL BUSINESS SCHEMA (JSON-LD)
+       ========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ThirtyOne Lab",
+      "image": "https://amnhmb.github.io/thirtyonelab.catalog_v3/Image/Favicon/Logo%20Favicon.webp",
+      "description": "ThirtyOne Lab Official - Kedai cetak baju custom apparel specialist di Kajang, Selangor.",
+      "@id": "https://amnhmb.github.io/thirtyonelab.catalog_v3/#localbusiness",
+      "url": "https://amnhmb.github.io/thirtyonelab.catalog_v3/",
+      "telephone": "+6011-2561 4436",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "26A, Jalan 1, Taman Bukit Cantik",
+        "addressLocality": "Kajang",
+        "addressRegion": "Selangor",
+        "postalCode": "43000",
+        "addressCountry": "MY"
+      },
+      "sameAs": [
+        "https://www.instagram.com/thirtyonelab",
+        "https://www.tiktok.com/@thirtyonelabofficial",
+        "https://www.facebook.com/thirtyonelab"
+      ]
+    }
+    </script>
+
+    <!-- ==========================================
+       3. FONTS & EXTERNAL STYLESHEET
+       ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/01-variables.css?v=2.2">
+    <link rel="stylesheet" href="css/02-reset-base.css?v=2.2">
+    <link rel="stylesheet" href="css/03-navbar.css?v=2.3">
+    <link rel="stylesheet" href="css/04-hero.css?v=2.2">
+    <link rel="stylesheet" href="css/12-lightbox.css?v=10.0">
+    <link rel="stylesheet" href="css/13-quote-builder-modals.css?v=10.0">
+    <link rel="stylesheet" href="css/14-own-mockup-modal.css?v=3.0">
+    <link rel="stylesheet" href="css/15-footer.css?v=2.5">
+    <link rel="stylesheet" href="css/16-animations.css?v=2.2">
+    <link rel="stylesheet" href="css/17-responsive.css?v=2.4">
+    <link rel="stylesheet" href="css/18-added-boutique-elements.css?v=5.1">
+    <link rel="stylesheet" href="css/19-v3-mobile-hub.css?v=31.0">
+    <link rel="stylesheet" href="css/20-desktop-collaboration.css">
+
+</head>
+
+<body>
+    <div id="appContainer">
+
+    <!-- ==========================================
+       4. STICKY NAVIGATION BAR
+       ========================================== -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="header-left">
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            <a href="index.html" class="logo-link">
+                <img src="Image/Favicon/Logo Favicon.webp" alt="ThirtyOne Lab Logo" class="brand-logo">
+                <span class="brand-name"><span class="brand-thirtyone">THIRTYONE</span><span class="brand-lab">LAB</span><sup class="brand-registered">&reg;</sup></span>
+            </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-i18n="nav_home" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Home</a>
+                <a href="about.html" class="nav-item" data-i18n="nav_about">About</a>
+                <a href="contact.html" class="nav-item" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="header-actions-mobile">
+                <div class="lang-switcher" title="Choose Language / Pilih Bahasa">
+                    <button class="lang-btn active" id="langBtnEN" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" id="langBtnMS" onclick="setLanguage('ms')">BM</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <nav class="mobile-nav-menu">
+            <a href="#" class="mobile-nav-item" onclick="toggleMobileMenu(); window.scrollTo({top:0, behavior:'smooth'}); return false;">Home</a>
+            <a href="about.html" class="mobile-nav-item" data-i18n="nav_about">About</a>
+            <a href="contact.html" class="mobile-nav-item" data-i18n="nav_contact">Contact</a>
+            <div class="mobile-collab-section">
+                <span class="mobile-collab-title" data-i18n="collab_title">Collaboration</span>
+                <div class="mobile-collab-logos">
+                    <img src="Image/Collaboration%20With%20(Customer)/AIA.webp" alt="AIA">
+                    <img src="Image/Collaboration%20With%20(Customer)/Air%20Asia.webp" alt="Air Asia">
+                    <img src="Image/Collaboration%20With%20(Customer)/Der%20Cabin.webp" alt="Der Cabin">
+                    <img src="Image/Collaboration%20With%20(Customer)/KKM.webp" alt="KKM">
+                    <img src="Image/Collaboration%20With%20(Customer)/Politeknik%20Nilai.webp" alt="Politeknik Nilai">
+                    <img src="Image/Collaboration%20With%20(Customer)/Setapak%20City.webp" alt="Setapak City">
+                    <img src="Image/Collaboration%20With%20(Customer)/Zero%20FC.webp" alt="Zero FC">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    
+
+    <!-- ==========================================
+       5. HERO LIFESTYLE SECTION
+       ========================================== -->
+    <section class="hero-section" id="home">
+        <img class="hero-bg" src="Image/Hero Page/Hero Page Merdeka.webp" alt="ThirtyOne Lab Official">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle" data-i18n="hero_subtitle">ThirtyOne Lab Official</span>
+            <h1 class="hero-title" data-i18n="hero_title">Custom Jerseys, Elevated</h1>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       6. DESKTOP COLLABORATION SECTION
+       ========================================== -->
+    <!-- Collaboration section moved below -->
+
+    <!-- ==========================================
+       5A. VERSION 3 LANDING PAGE HUB (PHONE-FIRST)
+       ========================================== -->
+    <section class="v3-hub-section" id="v3Hub">
+        <!-- Mobile Loop Marquee (Phone Only) -->
+        <div class="marquee-wrap">
+            <style>
+                .marquee-wrap {
+                    width: 100%;
+                    overflow: hidden;
+                    background: transparent;
+                    padding: 4px 0 10px 0; /* Reduced padding-top to bring closer to hero */
+                }
+                .marquee-wrap .track {
+                    display: flex !important;
+                    flex-wrap: nowrap !important;
+                    width: max-content;
+                    animation: scroll-left 28s linear infinite;
+                }
+                .jersey-img {
+                    width: 63px !important;
+                    height: 84px !important;
+                    object-fit: cover;
+                    margin-right: 14px;
+                    border-radius: 8px;
+                    flex-shrink: 0 !important;
+                }
+                @keyframes scroll-left {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
+                }
+
+                
+                /* Marquee is now visible on all devices */
+            </style>
+            <div class="track">
+                <!-- Original Set -->
+                <img src="Image/Mobile Marquee/26-0007.webp" alt="Jersey 26-0007" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0030.webp" alt="Jersey 26-0030" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0025.webp" alt="Jersey 26-0025" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0026.webp" alt="Jersey 26-0026" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0004.webp" alt="Jersey 26-0004" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0003.webp" alt="Jersey 26-0003" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0012.webp" alt="Jersey 26-0012" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0011.webp" alt="Jersey 26-0011" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0015.webp" alt="Jersey 26-0015" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0041.webp" alt="Jersey 26-0041" class="jersey-img" />
+                <!-- Duplicate for seamless loop -->
+                <img src="Image/Mobile Marquee/26-0007.webp" alt="Jersey 26-0007" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0030.webp" alt="Jersey 26-0030" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0025.webp" alt="Jersey 26-0025" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0026.webp" alt="Jersey 26-0026" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0004.webp" alt="Jersey 26-0004" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0003.webp" alt="Jersey 26-0003" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0012.webp" alt="Jersey 26-0012" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0011.webp" alt="Jersey 26-0011" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0015.webp" alt="Jersey 26-0015" class="jersey-img" />
+                <img src="Image/Mobile Marquee/26-0041.webp" alt="Jersey 26-0041" class="jersey-img" />
+            </div>
+        </div>
+
+        <!-- Social Media Icons (Moved here) -->
+        <div class="v3-hub-socials">
+            <a href="https://www.tiktok.com/@thirtyonelabofficial" target="_blank" class="v3-social-btn"><img src="Image/Favicon/Favicon Tiktok.webp" alt="TikTok"></a>
+            <a href="https://www.instagram.com/thirtyonelab" target="_blank" class="v3-social-btn"><img src="Image/Favicon/Favicon IG.webp" alt="Instagram"></a>
+            <a href="https://www.facebook.com/thirtyonelab" target="_blank" class="v3-social-btn"><img src="Image/Favicon/Favicon FB.webp" alt="Facebook"></a>
+            <a href="https://wa.me/601125614436" target="_blank" class="v3-social-btn"><img src="Image/Favicon/Favicon WhatsApp.webp" alt="WhatsApp"></a>
+        </div>
+
+        <!-- Primary Action Cards -->
+        <div class="v3-primary-group">
+            <button class="v3-btn-primary-hub" onclick="openV3Modal('collection')" id="v3BtnCollection" aria-label="Open Collection Design">
+                <div class="v3-btn-hub-text">
+                    <span class="v3-btn-hub-title" data-i18n="v3_hub_collection">Collection Design</span>
+                    <span class="v3-btn-hub-desc" data-i18n="v3_modal_collection_subtitle">Explore our curated catalog of premium designs</span>
+                </div>
+                <div class="v3-btn-hub-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+            </button>
+
+            <button class="v3-btn-primary-hub event-edition" onclick="openV3Modal('event')" id="v3BtnEvent" aria-label="Open Event Edition">
+                <div class="v3-btn-hub-text">
+                    <span class="v3-btn-hub-title" data-i18n="v3_hub_event">Event Edition</span>
+                    <span class="v3-btn-hub-desc" data-i18n="v3_modal_event_subtitle">Tournament and special edition jersey series</span>
+                </div>
+                <div class="v3-btn-hub-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+            </button>
+        </div>
+
+        <!-- Secondary Spec & Guide Rows -->
+        <div class="v3-secondary-group">
+            <!-- Row 1: Material, Cutting, Necklines -->
+            <div class="v3-row-3">
+                <button class="v3-btn-spec-hub" onclick="openV3Modal('material')" id="v3BtnMaterial" aria-label="Open Material Modal">
+                    <span class="v3-spec-hub-label" data-i18n="v3_hub_material">Material</span>
+                </button>
+                <button class="v3-btn-spec-hub" onclick="openV3Modal('cutting')" id="v3BtnCutting" aria-label="Open Cutting Modal">
+                    <span class="v3-spec-hub-label" data-i18n="v3_hub_cutting">Cutting</span>
+                </button>
+                <button class="v3-btn-spec-hub" onclick="openV3Modal('neck')" id="v3BtnNeck" aria-label="Open Neck Lines Modal">
+                    <span class="v3-spec-hub-label" data-i18n="v3_hub_neck">Neck Lines</span>
+                </button>
+            </div>
+
+            <!-- Row 2: Printing Details, Size Chart -->
+            <div class="v3-row-2">
+                <button class="v3-btn-spec-hub" onclick="openV3Modal('printing')" id="v3BtnPrinting" aria-label="Open Printing Details Modal">
+                    <span class="v3-spec-hub-label" data-i18n="v3_hub_printing">Printing Details</span>
+                </button>
+                <button class="v3-btn-spec-hub" onclick="openV3Modal('sizechart')" id="v3BtnSizeChart" aria-label="Open Size Chart Modal">
+                    <span class="v3-spec-hub-label" data-i18n="v3_hub_sizechart">Size Chart</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Static Collaboration Logos (Desktop Only) -->
+        <style>
+            @media (max-width: 900px) {
+                .static-collab-section {
+                    display: none !important;
+                }
+            }
+        </style>
+        <div class="static-collab-section" style="margin-top: 35px; text-align: center; padding-bottom: 20px;">
+            <p class="desktop-collab-subtitle" data-i18n="collab_subtitle" style="margin-bottom: 20px; font-family: var(--font-secondary); font-size: 0.85rem; color: var(--text-muted);">Trusted by Top Brands & Institutions</p>
+            <div class="static-collab-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center; padding: 0 16px;">
+                <img src="Image/Collaboration%20With%20(Customer)/AIA.webp" alt="AIA" style="height: 35px; width: auto; max-width: 90px; filter: grayscale(100%) opacity(0.6);">
+                <img src="Image/Collaboration%20With%20(Customer)/Air%20Asia.webp" alt="Air Asia" style="height: 35px; width: auto; max-width: 90px; filter: grayscale(100%) opacity(0.6);">
+                <img src="Image/Collaboration%20With%20(Customer)/Der%20Cabin.webp" alt="Der Cabin" style="height: 35px; width: auto; max-width: 90px; filter: grayscale(100%) opacity(0.6);">
+                <img src="Image/Collaboration%20With%20(Customer)/KKM.webp" alt="KKM" style="height: 35px; width: auto; max-width: 90px; filter: grayscale(100%) opacity(0.6);">
+                <img src="Image/Collaboration%20With%20(Customer)/Politeknik%20Nilai.webp" alt="Politeknik Nilai" style="height: 35px; width: auto; max-width: 90px; filter: grayscale(100%) opacity(0.6);">
+                <img src="Image/Collaboration%20With%20(Customer)/Setapak%20City.webp" alt="Setapak City" style="height: 35px; width: auto; max-width: 90px; filter: grayscale(100%) opacity(0.6);">
+                <img src="Image/Collaboration%20With%20(Customer)/Zero%20FC.webp" alt="Zero FC" style="height: 35px; width: auto; max-width: 90px; filter: grayscale(100%) opacity(0.6);">
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    <!-- ==========================================
+       8. VERSION 3 DEDICATED MODALS (7 MODALS)
+       ========================================== -->
+
+    <!-- Modal 1: Collection Design -->
+    <div class="v3-modal-overlay" id="modalCollection">
+        <div class="v3-modal-content">
+            <div class="v3-modal-header">
+                <div class="v3-modal-header-info">
+                    <h2 class="v3-modal-title" data-i18n="v3_modal_collection_title">Collection Design</h2>
+                    <span class="v3-modal-subtitle" data-i18n="v3_modal_collection_subtitle">Explore our curated catalog of premium designs</span>
+                </div>
+                <button class="v3-modal-close-btn" onclick="closeV3Modal('collection')" aria-label="Close">✕</button>
+            </div>
+            <div class="v3-modal-body">
+                <!-- Year Switcher Tabs (No Filter Chips) -->
+                <div class="v3-tab-container">
+                    <button class="v3-tab-btn" id="v3Tab2025" onclick="switchV3CollectionYear('2025')">2025 Edition</button>
+                    <button class="v3-tab-btn active" id="v3Tab2026" onclick="switchV3CollectionYear('2026')">2026 Edition</button>
+                </div>
+
+                <!-- 2-Column Product Grid -->
+                <div class="v3-grid-2col" id="v3CollectionGrid"></div>
+
+                <!-- Minimalist Pagination -->
+                <div class="v3-pagination" id="v3CollectionPagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Event Edition -->
+    <div class="v3-modal-overlay" id="modalEvent">
+        <div class="v3-modal-content">
+            <div class="v3-modal-header">
+                <div class="v3-modal-header-info">
+                    <h2 class="v3-modal-title" data-i18n="v3_modal_event_title">Event Edition</h2>
+                    <span class="v3-modal-subtitle" data-i18n="v3_modal_event_subtitle">Tournament and special edition jersey series</span>
+                </div>
+                <button class="v3-modal-close-btn" onclick="closeV3Modal('event')" aria-label="Close">✕</button>
+            </div>
+            <div class="v3-modal-body">
+                <div class="v3-grid-2col" id="v3EventGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Material -->
+    <div class="v3-modal-overlay" id="modalMaterial">
+        <div class="v3-modal-content">
+            <div class="v3-modal-header">
+                <div class="v3-modal-header-info">
+                    <h2 class="v3-modal-title" data-i18n="v3_modal_material_title">Fabric & Material</h2>
+                    <span class="v3-modal-subtitle" data-i18n="v3_modal_material_subtitle">High-performance sports and corporate fabrics</span>
+                </div>
+                <button class="v3-modal-close-btn" onclick="closeV3Modal('material')" aria-label="Close">✕</button>
+            </div>
+            <div class="v3-modal-body">
+                <div class="v3-grid-1col" id="v3MaterialList"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Cutting -->
+    <div class="v3-modal-overlay" id="modalCutting">
+        <div class="v3-modal-content">
+            <div class="v3-modal-header">
+                <div class="v3-modal-header-info">
+                    <h2 class="v3-modal-title" data-i18n="v3_modal_cutting_title">Jersey Cutting</h2>
+                    <span class="v3-modal-subtitle" data-i18n="v3_modal_cutting_subtitle">Silhouettes and fits tailored to your activity</span>
+                </div>
+                <button class="v3-modal-close-btn" onclick="closeV3Modal('cutting')" aria-label="Close">✕</button>
+            </div>
+            <div class="v3-modal-body">
+                <div class="v3-grid-2col" id="v3CuttingGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Neck Lines -->
+    <div class="v3-modal-overlay" id="modalNeck">
+        <div class="v3-modal-content">
+            <div class="v3-modal-header">
+                <div class="v3-modal-header-info">
+                    <h2 class="v3-modal-title" data-i18n="v3_modal_neck_title">Necklines & Collars</h2>
+                    <span class="v3-modal-subtitle" data-i18n="v3_modal_neck_subtitle">Select your preferred collar and neckline style</span>
+                </div>
+                <button class="v3-modal-close-btn" onclick="closeV3Modal('neck')" aria-label="Close">✕</button>
+            </div>
+            <div class="v3-modal-body">
+                <div class="v3-grid-2col" id="v3NeckGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Printing Details -->
+    <div class="v3-modal-overlay" id="modalPrinting">
+        <div class="v3-modal-content">
+            <div class="v3-modal-header">
+                <div class="v3-modal-header-info">
+                    <h2 class="v3-modal-title" data-i18n="v3_modal_printing_title">Printing Details</h2>
+                    <span class="v3-modal-subtitle" data-i18n="v3_modal_printing_subtitle">Typography & placement guide</span>
+                </div>
+                <button class="v3-modal-close-btn" onclick="closeV3Modal('printing')" aria-label="Close">✕</button>
+            </div>
+            <div class="v3-modal-body">
+                <!-- Printing Tabs -->
+                <div class="v3-tab-container">
+                    <button class="v3-tab-btn active" id="v3TabNameset" onclick="switchV3PrintingTab('nameset')" data-i18n="v3_tab_nameset">Name Set</button>
+                    <button class="v3-tab-btn" id="v3TabSponsor" onclick="switchV3PrintingTab('sponsor')" data-i18n="v3_tab_sponsor">Sponsor Design</button>
+                    <button class="v3-tab-btn" id="v3TabGuide" onclick="switchV3PrintingTab('guide')" data-i18n="v3_tab_guide">Placement Guide</button>
+                </div>
+
+                <div class="v3-grid-2col" id="v3PrintingGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Size Chart -->
+    <div class="v3-modal-overlay" id="modalSizeChart">
+        <div class="v3-modal-content">
+            <div class="v3-modal-header">
+                <div class="v3-modal-header-info">
+                    <h2 class="v3-modal-title" data-i18n="v3_modal_sizechart_title">Size Charts</h2>
+                    <span class="v3-modal-subtitle" data-i18n="v3_modal_sizechart_subtitle">Official measurement guide (Inches)</span>
+                </div>
+                <button class="v3-modal-close-btn" onclick="closeV3Modal('sizechart')" aria-label="Close">✕</button>
+            </div>
+            <div class="v3-modal-body">
+                <!-- Size Chart Tabs -->
+                <div class="v3-tab-container">
+                    <button class="v3-tab-btn active" id="v3TabShirt" onclick="switchV3SizeTab('shirt')" data-i18n="v3_tab_shirt">Shirt Sizes</button>
+                    <button class="v3-tab-btn" id="v3TabPants" onclick="switchV3SizeTab('pants')" data-i18n="v3_tab_pants">Pants Sizes</button>
+                    <button class="v3-tab-btn" id="v3TabMuslimah" onclick="switchV3SizeTab('muslimah')" data-i18n="v3_tab_muslimah">Muslimah Sizes</button>
+                </div>
+
+                <div class="v3-grid-1col" id="v3SizeChartGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+       DESKTOP SIDE PANEL (Desktop only — replaces modal overlay)
+       ========================================== -->
+    <div id="desktopSidePanel">
+        <div id="desktopSidePanelInner">
+            <!-- Modal content will be moved here by JS on desktop -->
+        </div>
+    </div>
+
+    <!-- ==========================================
+       9. UPGRADED LIGHTBOX MODULE (POP-UP PREVIEW)
+       ========================================== -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 1100px;">
+            <div class="v3-lightbox-hint-outside" style="color: #FFFFFF !important; font-size: 0.78rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; text-align: center; margin-bottom: 10px;" data-i18n="v3_tap_to_close">Tekan mana-mana untuk close</div>
+
+            <div class="v3-lightbox-wrapper">
+                <!-- LEFT: Image -->
+                <div class="lightbox-content">
+                    <button class="lightbox-inner-nav prev" id="lightboxInnerPrev" onclick="switchV3LightboxSlide('prev')" aria-label="Previous Angle" style="display: none;">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <img src="" alt="Preview Product" id="lightboxImg">
+                    <button class="lightbox-inner-nav next" id="lightboxInnerNext" onclick="switchV3LightboxSlide('next')" aria-label="Next Angle" style="display: none;">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <!-- Dot indicators remain with image on mobile -->
+                    <div class="v3-lightbox-dots" id="v3LightboxDots" style="display: none;"></div>
+                    <style>
+                        @media (min-width: 901px) {
+                            .v3-zoom-hint {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                    <div class="v3-zoom-hint" style="text-align: center; font-size: 0.75rem; color: rgba(0, 0, 0, 0.5); margin-top: 8px; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 6px; position: relative; z-index: 100;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            <line x1="11" y1="8" x2="11" y2="14"></line>
+                            <line x1="8" y1="11" x2="14" y2="11"></line>
+                        </svg>
+                        <span data-i18n="v3_zoom_hint">Boleh zoom (Guna 2 jari)</span>
+                        <button onclick="if(window.resetLightboxZoom) window.resetLightboxZoom()" style="background: rgba(0,0,0,0.1); border: none; border-radius: 4px; padding: 2px 8px; font-size: 0.7rem; font-weight: 600; color: #333; margin-left: 8px; cursor: pointer;">Reset Zoom</button>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Actions (on desktop) / Below image (on mobile) -->
+                <div class="v3-lightbox-details">
+                    <!-- Design Reference Code / Title -->
+                    <div id="lightboxRefDisplay" class="lightbox-ref-display" style="margin-bottom: 2px;"></div>
+
+                    <!-- Custom HTML Container for Material/Placement details -->
+                    <div id="v3LightboxCustomContent" style="margin-top: 6px; width: 100%;"></div>
+
+                    <!-- 100% Customizable Illustration Notice Box -->
+                    <div class="v3-illustration-disclaimer" id="lightboxDisclaimerBox">
+                        <div class="v3-disclaimer-header">
+                            <span data-i18n="v3_disclaimer_title">✦ 100% FULLY CUSTOMIZABLE</span>
+                        </div>
+                        <p class="v3-disclaimer-text" data-i18n="v3_disclaimer_desc">This image is for visual illustration. All elements (colors, logos, collar, sleeves, cutting &amp; fabric) can be fully customized to your preferences.</p>
+                    </div>
+
+                    <!-- Stacked Action Buttons (Copy Image + WhatsApp) -->
+                    <div class="v3-lightbox-btn-stack" id="lightboxBtnStack">
+                        <button id="btnCopyMockup" class="v3-btn-copy" onclick="copyCurrentMockupImage()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <span data-i18n="v3_btn_copy_image">Salin Gambar Mockup</span>
+                        </button>
+                        <button id="btnWhatsAppDirect" class="v3-btn-wa" onclick="inquireCurrentMockupWhatsApp()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 6px;"><path d="M12.012 2c-5.506 0-9.989 4.478-9.989 9.984 0 1.764.459 3.486 1.332 5.006l-1.355 4.954 5.08-1.327c1.472.802 3.14 1.229 4.932 1.229 5.507 0 9.989-4.478 9.989-9.985 0-5.506-4.482-9.984-9.989-9.984zm5.795 14.193c-.244.688-1.427 1.319-1.96 1.36-.532.041-1.229.184-3.993-.902-3.342-1.312-5.46-4.757-5.626-4.978-.166-.222-1.355-1.802-1.355-3.439 0-1.638.858-2.443 1.163-2.776.305-.333.665-.416.887-.416.222 0 .443.003.637.012.205.01.48-.078.748.566.277.665.943 2.302 1.026 2.468.083.166.138.36.027.582-.111.222-.166.36-.333.555-.166.194-.349.434-.5.583-.166.166-.339.347-.146.679.194.333.861 1.42 1.849 2.299 1.27 1.131 2.342 1.482 2.675 1.648.333.166.527.139.721-.083.194-.222.832-.971 1.054-1.304.222-.333.443-.277.748-.166.305.111 1.939.915 2.272 1.082.333.166.555.25.637.388.083.138.083.799-.161 1.487z"/></svg>
+                            <span data-i18n="v3_btn_whatsapp_chat">Tanya via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Copy Alert -->
+    <div id="v3Toast" class="v3-toast">
+        <span class="v3-toast-icon">✓</span>
+        <span id="v3ToastMsg">Image copied to clipboard!</span>
+    </div>
+
+    <!-- ==========================================
+       11. AUTOMATED QUOTE BUILDER MODAL (STANDARDS)
+       ========================================== -->
+    <div class="quote-modal-overlay" id="quoteBuilderModal">
+        <div class="quote-modal-content">
+            <button class="lightbox-close" id="quoteBuilderClose">×</button>
+            <h2 data-i18n="qb_title">Order Details</h2>
+            <p id="quoteProgress">Step 1 of 7</p>
+
+            <!-- STEP 1 -->
+            <div id="step1" class="quote-step">
+                <h3 data-i18n="qb_step1_title">Design Selected</h3>
+                <p id="summaryDesignPreview">Ready to proceed</p>
+                <div style="margin-top:20px; margin-bottom:20px;">
+                    <label style="display:block; margin-bottom:10px; font-weight:600;" data-i18n="qb_alter_prompt">Edit mockup design?</label>
+                    <label style="margin-right:20px;"><input type="radio" name="alterDesign" value="Yes" aria-label="Yes, edit design"> <span data-i18n="qb_yes">Yes</span></label>
+                    <label><input type="radio" name="alterDesign" value="No" checked aria-label="No, keep design"> <span data-i18n="qb_no">No</span></label>
+                </div>
+                <div class="quote-action-row">
+                    <button class="qb-next" data-i18n="qb_btn_next_qty">Next: Quantity</button>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div id="step2" class="quote-step" style="display:none;">
+                <h3 data-i18n="qb_step2_title">Quantity</h3>
+                <input type="number" id="qbQuantity" min="5" value="5" aria-label="Quantity">
+                <div style="margin-top: 15px;">
+                    <label style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.9rem; font-weight: normal; color: #111;">
+                        <input type="checkbox" id="qbQuantityNotSure" style="width: 18px; height: 18px; cursor: pointer;" aria-label="Estimate quantity (Not sure yet)">
+                        <span data-i18n="qb_estimate_qty">Estimate Quantity</span>
+                    </label>
+                </div>
+                <div class="quote-action-row">
+                    <button class="qb-prev" data-i18n="qb_btn_back">Back</button>
+                    <button class="qb-next" data-i18n="qb_btn_next_material">Next: Material</button>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div id="step3" class="quote-step" style="display:none;">
+                <h3 data-i18n="qb_step3_title">Material</h3>
+                <select id="qbMaterial" aria-label="Select Fabric Material"></select>
+                <div id="qbMaterialPreview" style="display:none;"></div>
+                <div class="quote-action-row">
+                    <button class="qb-prev" data-i18n="qb_btn_back">Back</button>
+                    <button class="qb-next" data-i18n="qb_btn_next_cutting">Next: Cutting</button>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div id="step4" class="quote-step" style="display:none;">
+                <h3 data-i18n="qb_step4_title">Cutting</h3>
+                <select id="qbCutting" aria-label="Select Cutting Style"></select>
+                <div id="qbCuttingPreview" style="display:none;"></div>
+                <div class="quote-action-row">
+                    <button class="qb-prev" data-i18n="qb_btn_back">Back</button>
+                    <button class="qb-next" data-i18n="qb_btn_next_neck">Next: Neck/Collar</button>
+                </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div id="step5" class="quote-step" style="display:none;">
+                <h3 data-i18n="qb_step5_title">Neck / Collar</h3>
+                <select id="qbNeck" aria-label="Select Neckline or Collar Style"></select>
+                <div id="qbNeckPreview" style="display:none;"></div>
+                <div class="quote-action-row">
+                    <button class="qb-prev" data-i18n="qb_btn_back">Back</button>
+                    <button class="qb-next" data-i18n="qb_btn_next_sleeve">Next: Sleeve</button>
+                </div>
+            </div>
+
+            <!-- STEP 6 -->
+            <div id="step6" class="quote-step" style="display:none;">
+                <h3 data-i18n="qb_step6_title">Sleeve</h3>
+                <table class="sleeve-table" style="width:100%; text-align:left; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="padding-bottom: 10px; width: 45%;" data-i18n="qb_table_type">Type</th>
+                            <th style="padding-bottom: 10px; text-align:center; width: 15%;" data-i18n="qb_table_all">All</th>
+                            <th style="padding-bottom: 10px; text-align:center; width: 40%;" data-i18n="qb_table_fill">Fill in</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="qb_sleeve_short">Short</td>
+                            <td style="text-align:center;"><input type="radio" name="sleeveShortOpt" value="all" checked style="vertical-align: middle; margin-top:0;" aria-label="All Short Sleeves"></td>
+                            <td style="text-align:center; white-space:nowrap;">
+                                <input type="radio" name="sleeveShortOpt" value="fill" style="vertical-align: middle; margin-top:0;" aria-label="Specific quantity of Short Sleeves">
+                                <input type="number" id="qbSleeveShortQty" min="0" placeholder="Qty" style="width:60px; padding:5px; vertical-align: middle; margin-left:3px;" disabled aria-label="Short sleeve quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="qb_sleeve_long">Long (+RM5/Shirt)</td>
+                            <td style="text-align:center;"><input type="radio" name="sleeveLongOpt" value="all" style="vertical-align: middle; margin-top:0;" aria-label="All Long Sleeves"></td>
+                            <td style="text-align:center; white-space:nowrap;">
+                                <input type="radio" name="sleeveLongOpt" value="fill" style="vertical-align: middle; margin-top:0;" aria-label="Specific quantity of Long Sleeves">
+                                <input type="number" id="qbSleeveLongQty" min="0" placeholder="Qty" style="width:60px; padding:5px; vertical-align: middle; margin-left:3px;" disabled aria-label="Long sleeve quantity">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="margin-top: 15px; margin-bottom: 15px;">
+                    <label style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.9rem; font-weight: normal; color: #111;">
+                        <input type="checkbox" id="qbSleeveNotSure" style="width: 18px; height: 18px; cursor: pointer;" aria-label="Sleeve quantity not sure yet">
+                        <span data-i18n="qb_not_sure">Not Sure Yet</span>
+                    </label>
+                </div>
+                <p id="sleeveError" style="color: var(--primary-red); font-size: 0.85rem; margin-top: -10px; margin-bottom: 20px; display: none;" data-i18n="qb_sleeve_error">
+                    Total sleeve qty must match total order quantity.</p>
+                <div class="quote-action-row">
+                    <button class="qb-prev" data-i18n="qb_btn_back">Back</button>
+                    <button class="qb-next" id="btnNextSleeve" data-i18n="qb_btn_next_nameset">Next: Name Set</button>
+                </div>
+            </div>
+
+            <!-- STEP 7 -->
+            <div id="step7" class="quote-step" style="display:none;">
+                <h3 data-i18n="qb_step7_title">Add-Ons (Name Set & Short Pants)</h3>
+                <div style="margin-top:15px; margin-bottom:15px;">
+                    <label style="display:block; margin-bottom:8px; font-weight:600;" data-i18n="qb_add_nameset_prompt">Add Name Set? (+RM3/Shirt)</label>
+                    <label style="margin-right:20px;"><input type="radio" name="addNameset" value="Yes" aria-label="Yes, add nameset"> <span data-i18n="qb_yes">Yes</span></label>
+                    <label><input type="radio" name="addNameset" value="No" checked aria-label="No, do not add nameset"> <span data-i18n="qb_no">No</span></label>
+                </div>
+                <div style="margin-top:20px; margin-bottom:15px; border-top: 1px dashed var(--border-color); padding-top: 15px;">
+                    <label style="display:block; margin-bottom:8px; font-weight:600;" data-i18n="qb_add_pants_prompt">Add Short Pants?</label>
+                    <label style="margin-right:20px;"><input type="radio" name="addPants" value="Yes" aria-label="Yes, add short pants"> <span data-i18n="qb_yes">Yes</span></label>
+                    <label><input type="radio" name="addPants" value="No" checked aria-label="No, do not add short pants"> <span data-i18n="qb_no">No</span></label>
+                </div>
+                <div class="quote-action-row">
+                    <button class="qb-prev" data-i18n="qb_btn_back">Back</button>
+                    <button class="qb-next" data-i18n="qb_btn_next_review">Next: Review</button>
+                </div>
+            </div>
+
+            <!-- STEP 8 -->
+            <div id="step8" class="quote-step" style="display:none;">
+                <h3 data-i18n="qb_step8_title">Review Summary</h3>
+                <p><strong>Design:</strong> <span id="summaryDesign"></span></p>
+                <p><strong>Quantity:</strong> <span id="summaryQuantity"></span></p>
+                <p><strong>Material:</strong> <span id="summaryMaterial"></span></p>
+                <p><strong>Cutting:</strong> <span id="summaryCutting"></span></p>
+                <p><strong>Neck/Collar:</strong> <span id="summaryNeck"></span></p>
+                <p><strong>Sleeve:</strong> <span id="summarySleeve"></span></p>
+                <p><strong>Nameset:</strong> <span id="summaryNameset"></span></p>
+                <p><strong>Short Pants:</strong> <span id="summaryShortPants"></span></p>
+                <div class="quote-action-row">
+                    <button class="qb-prev" data-i18n="qb_btn_back">Back</button>
+                    <button id="sendWhatsAppBtn" class="lightbox-wa-btn" data-i18n="qb_send_whatsapp">Send to WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+       12. AUTOMATED QUOTE BUILDER MODAL (OWN DESIGN)
+       ========================================== -->
+    <div class="quote-modal-overlay" id="quoteBuilderOwnModal">
+        <div class="quote-modal-content quote-modal-content--own">
+            <button class="lightbox-close" id="quoteBuilderOwnClose">×</button>
+
+            <!-- Side-by-side wrapper: WhatsApp Guide (left) + Order Details (right) -->
+            <div class="own-modal-layout">
+
+                <!-- LEFT: WhatsApp Guide Card (visible only on step 1) -->
+                <div class="wa-guide-panel" id="waGuidePanel">
+                    <div class="wa-guide-card">
+                        <div class="wa-guide-header">
+                            <span class="wa-guide-title">📎 How to Send Your Design</span>
+                            <span class="wa-guide-subtitle">Panduan hantar fail design anda</span>
+                        </div>
+
+                        <div class="wa-guide-steps-grid">
+                            <!-- STEP 1 -->
+                            <div class="wa-guide-step">
+                                <div class="wa-guide-badge">STEP 1</div>
+                                <div class="wa-guide-step-header">
+                                    <span class="wa-guide-step-num">1.</span>
+                                    <div>
+                                        <span class="wa-guide-step-title">Click</span>
+                                        <span class="wa-guide-step-sub"><i>Klik</i></span>
+                                    </div>
+                                </div>
+                                <div class="wa-guide-inner">
+                                    <div class="wa-guide-desc">
+                                        <span>Find the '+' button in the chat bar</span>
+                                        <span class="wa-guide-desc-sub"><i>Cari tombol '+' di baris sembang</i></span>
+                                    </div>
+                                    <div class="wa-mockup-frame">
+                                        <div class="wa-mock-header">
+                                            <div class="wa-mock-avatar">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                                </svg>
+                                            </div>
+                                            <span class="wa-mock-name">Thirtyonelab</span>
+                                        </div>
+                                        <div class="wa-mock-body">
+                                            <div class="wa-mock-bubble-right">
+                                                <div class="wa-mock-line"></div>
+                                                <div class="wa-mock-line wa-mock-line-short"></div>
+                                                <div class="wa-mock-bubble-footer">
+                                                    <span>😊</span>
+                                                    <span class="wa-mock-check">✓✓</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wa-mock-input-bar">
+                                            <div class="wa-mock-plus-highlight">
+                                                <div class="wa-mock-plus-btn">+</div>
+                                            </div>
+                                            <span class="wa-mock-placeholder">Ketik pesan...</span>
+                                            <span class="wa-mock-emoji">😊</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- STEP 2 -->
+                            <div class="wa-guide-step">
+                                <div class="wa-guide-badge">STEP 2</div>
+                                <div class="wa-guide-step-header">
+                                    <span class="wa-guide-step-num">2.</span>
+                                    <div>
+                                        <span class="wa-guide-step-title">Choose Document or Photos</span>
+                                        <span class="wa-guide-step-sub"><i>Pilih Document atau Photos</i></span>
+                                    </div>
+                                </div>
+                                <div class="wa-guide-inner">
+                                    <div class="wa-mockup-frame">
+                                        <div class="wa-mock-header">
+                                            <div class="wa-mock-avatar">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                                </svg>
+                                            </div>
+                                            <span class="wa-mock-name">Thirtyonelab</span>
+                                        </div>
+                                        <div class="wa-mock-body">
+                                            <div class="wa-mock-menu-popup">
+                                                <div class="wa-mock-menu-item">
+                                                    <div class="wa-mock-menu-icon">
+                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                                            <circle cx="12" cy="13" r="4" />
+                                                        </svg>
+                                                    </div>
+                                                    <span>Camera</span>
+                                                </div>
+                                                <div class="wa-mock-menu-active">
+                                                    <div class="wa-mock-menu-item">
+                                                        <div class="wa-mock-doc-badge">
+                                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                                                <polyline points="14 2 14 8 20 8" />
+                                                            </svg>
+                                                        </div>
+                                                        <span>Document</span>
+                                                    </div>
+                                                    <div class="wa-mock-menu-item">
+                                                        <div class="wa-mock-photo-badge">
+                                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                                                <circle cx="8.5" cy="8.5" r="1.5" />
+                                                                <polyline points="21 15 16 10 5 21" />
+                                                            </svg>
+                                                        </div>
+                                                        <span>Photos & Videos</span>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-mock-menu-item">
+                                                    <div class="wa-mock-menu-icon">
+                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                                            <circle cx="12" cy="7" r="4" />
+                                                        </svg>
+                                                    </div>
+                                                    <span>Contacts</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wa-mock-input-bar">
+                                            <div class="wa-mock-plus-btn">+</div>
+                                            <span class="wa-mock-placeholder">Ketik pesan...</span>
+                                            <span class="wa-mock-emoji">😊</span>
+                                        </div>
+                                    </div>
+                                    <div class="wa-guide-footer-text">
+                                        <span>Select <strong>'Document'</strong> or <strong>'Photos & Videos'</strong> icon to attach files</span>
+                                        <span class="wa-guide-footer-sub"><i>Pilih ikon <strong>'Document'</strong> atau <strong>'Photos & Videos'</strong> untuk melampirkan fail</i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Order Details Form -->
+                <div class="own-modal-form">
+                    <h2 data-i18n="qb_title">Order Details</h2>
+                    <p id="quoteProgressOwn">Step 1 of 7</p>
+
+                    <div id="stepOwn2" class="quote-step">
+                        <h3 data-i18n="qb_step2_title">Quantity</h3>
+                        <input type="number" id="qbOwnQuantity" min="5" value="5" aria-label="Quantity for own design">
+                        <div style="margin-top: 15px;">
+                            <label style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.9rem; font-weight: normal; color: #111;">
+                                <input type="checkbox" id="qbOwnQuantityNotSure" style="width: 18px; height: 18px; cursor: pointer;" aria-label="Estimate quantity for own design (Not sure yet)">
+                                <span data-i18n="qb_estimate_qty">Estimate Quantity</span>
+                            </label>
+                        </div>
+                        <div class="quote-action-row">
+                            <button class="qb-own-next" data-i18n="qb_btn_next_material">Next: Material</button>
+                        </div>
+                    </div>
+
+                    <div id="stepOwn3" class="quote-step" style="display:none;">
+                        <h3 data-i18n="qb_step3_title">Material</h3>
+                        <select id="qbOwnMaterial" aria-label="Select Material for own design"></select>
+                        <div id="qbOwnMaterialPreview" style="display:none;"></div>
+                        <div class="quote-action-row">
+                            <button class="qb-own-prev" data-i18n="qb_btn_back">Back</button>
+                            <button class="qb-own-next" data-i18n="qb_btn_next_cutting">Next: Cutting</button>
+                        </div>
+                    </div>
+
+                    <div id="stepOwn4" class="quote-step" style="display:none;">
+                        <h3 data-i18n="qb_step4_title">Cutting</h3>
+                        <select id="qbOwnCutting" aria-label="Select Cutting for own design"></select>
+                        <div id="qbOwnCuttingPreview" style="display:none;"></div>
+                        <div class="quote-action-row">
+                            <button class="qb-own-prev" data-i18n="qb_btn_back">Back</button>
+                            <button class="qb-own-next" data-i18n="qb_btn_next_neck">Next: Neck/Collar</button>
+                        </div>
+                    </div>
+
+                    <div id="stepOwn5" class="quote-step" style="display:none;">
+                        <h3 data-i18n="qb_step5_title">Neck / Collar</h3>
+                        <select id="qbOwnNeck" aria-label="Select Neck or Collar Style for own design"></select>
+                        <div id="qbOwnNeckPreview" style="display:none;"></div>
+                        <div class="quote-action-row">
+                            <button class="qb-own-prev" data-i18n="qb_btn_back">Back</button>
+                            <button class="qb-own-next" data-i18n="qb_btn_next_sleeve">Next: Sleeve</button>
+                        </div>
+                    </div>
+
+                    <div id="stepOwn6" class="quote-step" style="display:none;">
+                        <h3 data-i18n="qb_step6_title">Sleeve</h3>
+                        <table class="sleeve-table" style="width:100%; text-align:left; border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th style="padding-bottom: 10px; width: 45%;" data-i18n="qb_table_type">Type</th>
+                                    <th style="padding-bottom: 10px; text-align:center; width: 15%;" data-i18n="qb_table_all">All</th>
+                                    <th style="padding-bottom: 10px; text-align:center; width: 40%;" data-i18n="qb_table_fill">Fill in</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-i18n="qb_sleeve_short">Short</td>
+                                    <td style="text-align:center;"><input type="radio" name="sleeveOwnShortOpt" value="all" checked style="vertical-align: middle; margin-top:0;" aria-label="All Short Sleeves for own design"></td>
+                                    <td style="text-align:center; white-space:nowrap;">
+                                        <input type="radio" name="sleeveOwnShortOpt" value="fill" style="vertical-align: middle; margin-top:0;" aria-label="Specific quantity of Short Sleeves for own design">
+                                        <input type="number" id="qbOwnSleeveShortQty" min="0" placeholder="Qty" style="width:60px; padding:5px; vertical-align: middle; margin-left:3px;" disabled aria-label="Short sleeve quantity for own design">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-i18n="qb_sleeve_long">Long (+RM5/Shirt)</td>
+                                    <td style="text-align:center;"><input type="radio" name="sleeveOwnLongOpt" value="all" style="vertical-align: middle; margin-top:0;" aria-label="All Long Sleeves for own design"></td>
+                                    <td style="text-align:center; white-space:nowrap;">
+                                        <input type="radio" name="sleeveOwnLongOpt" value="fill" style="vertical-align: middle; margin-top:0;" aria-label="Specific quantity of Long Sleeves for own design">
+                                        <input type="number" id="qbOwnSleeveLongQty" min="0" placeholder="Qty" style="width:60px; padding:5px; vertical-align: middle; margin-left:3px;" disabled aria-label="Long sleeve quantity for own design">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="margin-top: 15px; margin-bottom: 15px;">
+                            <label style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.9rem; font-weight: normal; color: #111;">
+                                <input type="checkbox" id="qbOwnSleeveNotSure" style="width: 18px; height: 18px; cursor: pointer;" aria-label="Sleeve quantity for own design not sure yet">
+                                <span data-i18n="qb_not_sure">Not Sure Yet</span>
+                            </label>
+                        </div>
+                        <p id="sleeveOwnError" style="color: var(--primary-red); font-size: 0.85rem; margin-top: -10px; margin-bottom: 20px; display: none;" data-i18n="qb_sleeve_error">
+                            Total sleeve qty must match total order quantity.</p>
+                        <div class="quote-action-row">
+                            <button class="qb-own-prev" data-i18n="qb_btn_back">Back</button>
+                            <button class="qb-own-next" id="btnNextSleeve" data-i18n="qb_btn_next_nameset">Next: Name Set</button>
+                        </div>
+                    </div>
+
+                    <div id="stepOwn7" class="quote-step" style="display:none;">
+                        <h3 data-i18n="qb_step7_title">Add-Ons (Name Set & Short Pants)</h3>
+                        <div style="margin-top:15px; margin-bottom:15px;">
+                            <label style="display:block; margin-bottom:8px; font-weight:600;" data-i18n="qb_add_nameset_prompt">Add Name Set? (+RM3/Shirt)</label>
+                            <label style="margin-right:20px;"><input type="radio" name="addOwnNameset" value="Yes" aria-label="Yes, add nameset for own design"> <span data-i18n="qb_yes">Yes</span></label>
+                            <label><input type="radio" name="addOwnNameset" value="No" checked aria-label="No, do not add nameset for own design"> <span data-i18n="qb_no">No</span></label>
+                        </div>
+                        <div style="margin-top:20px; margin-bottom:15px; border-top: 1px dashed var(--border-color); padding-top: 15px;">
+                            <label style="display:block; margin-bottom:8px; font-weight:600;" data-i18n="qb_add_pants_prompt">Add Short Pants?</label>
+                            <label style="margin-right:20px;"><input type="radio" name="addOwnPants" value="Yes" aria-label="Yes, add short pants for own design"> <span data-i18n="qb_yes">Yes</span></label>
+                            <label><input type="radio" name="addOwnPants" value="No" checked aria-label="No, do not add short pants for own design"> <span data-i18n="qb_no">No</span></label>
+                        </div>
+                        <div class="quote-action-row">
+                            <button class="qb-own-prev" data-i18n="qb_btn_back">Back</button>
+                            <button class="qb-own-next" data-i18n="qb_btn_next_review">Next: Review</button>
+                        </div>
+                    </div>
+
+                    <div id="stepOwn8" class="quote-step" style="display:none;">
+                        <h3 data-i18n="qb_step8_title">Review Summary</h3>
+                        <p><strong data-i18n="sum_design">Design:</strong> <span id="summaryOwnDesign"></span></p>
+                        <p><strong data-i18n="sum_quantity">Quantity:</strong> <span id="summaryOwnQuantity"></span></p>
+                        <p><strong data-i18n="sum_material">Material:</strong> <span id="summaryOwnMaterial"></span></p>
+                        <p><strong data-i18n="sum_cutting">Cutting:</strong> <span id="summaryOwnCutting"></span></p>
+                        <p><strong data-i18n="sum_neck">Neck/Collar:</strong> <span id="summaryOwnNeck"></span></p>
+                        <p><strong data-i18n="sum_sleeve">Sleeve:</strong> <span id="summaryOwnSleeve"></span></p>
+                        <p><strong data-i18n="sum_nameset">Nameset:</strong> <span id="summaryOwnNameset"></span></p>
+                        <p><strong data-i18n="sum_shortpants">Short Pants:</strong> <span id="summaryOwnShortPants"></span></p>
+                        <div class="quote-action-row">
+                            <button class="qb-own-prev" data-i18n="qb_btn_back">Back</button>
+                            <button id="sendWhatsAppOwnBtn" class="lightbox-wa-btn" data-i18n="qb_send_whatsapp">Send to WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========================================
+       10. SITE FOOTER
+       ========================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <img src="Image/Favicon/Logo Favicon Footer.webp" alt="ThirtyOne Lab Logo" class="footer-logo">
+        </div>
+        <p data-i18n="footer_rights">Copyright © 2026 ThirtyOne Lab. All Rights Reserved.</p>
+        <p data-i18n="footer_tagline">Wear With Pride.✨</p>
+    </footer>
+
+    <!-- All JS loaded via ES module imports from app_v2.js -->
+    <script type="module" src="js/app_v2.js"></script>
+
+    <script>
+        function toggleMobileMenu() {
+            const btn = document.getElementById('hamburgerBtn');
+            const overlay = document.getElementById('mobileNavOverlay');
+            if(btn && overlay) {
+                btn.classList.toggle('open');
+                overlay.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('hamburgerBtn');
+            if (btn) btn.addEventListener('click', toggleMobileMenu);
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

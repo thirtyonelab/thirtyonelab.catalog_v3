@@ -1,0 +1,187 @@
+/* --- 11. BOUTIQUE SECTIONS (ABOUT & CONTACT) --- */
+.boutique-section {
+    padding: 100px 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* About Us Layout */
+.about-section {
+    background-color: var(--off-white-bg);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.about-text-content h2 {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.about-text-content p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.about-image-collage {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.about-logo-text {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.about-logo-text .brand-name {
+    font-size: clamp(1.5rem, 8vw, 2.2rem);
+    letter-spacing: 1px;
+}
+
+.about-main-img {
+    width: 100%;
+    max-width: 320px; /* Limit logo size to look neat */
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(15%);
+    transition: var(--transition);
+    margin: 0 auto;
+    display: block;
+}
+
+.about-main-img:hover {
+    filter: grayscale(0%);
+}
+
+/* Contact Showroom Section */
+.contact-section {
+    background-color: var(--off-white-bg);
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 60px 50px;
+}
+
+.contact-card h2 {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.contact-intro {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 45px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--off-white-bg);
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.contact-info-text h3, .contact-info-text h4 {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.contact-info-text a, .contact-info-text span {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.contact-info-text a:hover {
+    color: var(--primary-red);
+}
+
+/* Minimalist Social Links Buttons Row */
+.contact-social-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 30px;
+}
+
+.social-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    padding: 10px 18px;
+    transition: var(--transition);
+}
+
+.social-link-btn:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.social-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+

@@ -1,0 +1,59 @@
+/* --- 10. MINIMALIST PAGINATION --- */
+.pagination-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;
+    
+    /* Horizontal scrolling for mobile */
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    /* Hide scrollbar for cleaner look */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.pagination-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Safe center trick: centers if fits, flex-start if overflows */
+.pagination-container::before,
+.pagination-container::after {
+    content: '';
+    margin: auto;
+}
+
+.page-btn {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    color: var(--text-muted);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-btn:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.page-btn.active {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: var(--white);
+}
+

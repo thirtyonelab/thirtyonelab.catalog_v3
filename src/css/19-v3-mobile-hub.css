@@ -1,0 +1,1280 @@
+/* ==========================================================================
+   THIRTYONE LAB - VERSION 3 MOBILE-FIRST HUB & DEDICATED MODALS
+   Minimalist Luxury Boutique Aesthetic (Muted Red, Warm Off-White)
+   ========================================================================== */
+
+/* --- 1. VERSION 3 LANDING HUB --- */
+.v3-hub-section {
+    position: relative;
+    padding: 30px 16px 50px 16px;
+    max-width: 650px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.v3-hub-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.v3-hub-tag {
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-red);
+    margin-bottom: 8px;
+}
+
+.v3-hub-title {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.v3-hub-subtitle {
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Primary Action Buttons (Collection Design & Event Edition) */
+
+
+.v3-hub-socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.v3-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.v3-social-btn:hover,
+.v3-social-btn:active {
+    border-color: var(--primary-red);
+    
+    box-shadow: 0 6px 15px rgba(197, 27, 39, 0.1);
+}
+
+.v3-hub-socials a img {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+    display: inline-block !important;
+}
+
+.v3-primary-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.v3-btn-primary-hub {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 20px;
+    background: #FFFFFF;
+    border: 1.5px solid var(--border-color);
+    border-radius: 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.v3-btn-primary-hub:active,
+.v3-btn-primary-hub:hover {
+    border-color: var(--primary-red);
+    
+    box-shadow: 0 8px 24px rgba(197, 27, 39, 0.08);
+}
+
+
+
+.v3-btn-primary-hub.event-edition:hover,
+.v3-btn-primary-hub.event-edition:active {
+    border-color: var(--primary-red);
+}
+
+.v3-btn-hub-text {
+    display: flex;
+    pointer-events: none;
+    user-select: none;
+    flex-direction: column;
+    text-align: left;
+}
+
+.v3-btn-hub-title {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.v3-btn-hub-desc {
+    font-family: var(--font-secondary);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.v3-btn-hub-arrow {
+    display: flex;
+    pointer-events: none;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.v3-btn-primary-hub:hover .v3-btn-hub-arrow,
+.v3-btn-primary-hub:active .v3-btn-hub-arrow {
+    background: transparent;
+    color: var(--primary-red);
+    transform: translateX(5px);
+}
+
+/* Secondary Action Buttons (Specs & Guides) */
+.v3-secondary-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.v3-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.v3-row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.v3-btn-spec-hub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 8px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.v3-btn-spec-hub:active,
+.v3-btn-spec-hub:hover {
+    border-color: var(--primary-red);
+    background: var(--primary-red-light);
+    
+    box-shadow: 0 6px 16px rgba(197, 27, 39, 0.06);
+}
+
+.v3-spec-hub-label {
+    pointer-events: none;
+    user-select: none;
+    font-family: var(--font-primary);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--text-dark);
+    margin-top: 2px;
+}
+
+.v3-btn-spec-hub:hover .v3-spec-hub-label,
+.v3-btn-spec-hub:active .v3-spec-hub-label {
+    color: var(--primary-red);
+}
+
+/* --- 2. V3 DEDICATED MODAL OVERLAYS --- */
+.v3-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(17, 17, 17, 0.7);
+    z-index: 9000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+}
+
+.v3-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.v3-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    height: 90vh;
+    height: 90dvh;
+    max-height: 90vh;
+    max-height: 90dvh;
+    background: var(--off-white-bg);
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 -15px 50px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.v3-modal-overlay.active .v3-modal-content {
+    transform: translateY(0);
+}
+
+/* Desktop sizing for V3 Modals */
+@media (min-width: 769px) {
+    .v3-modal-overlay {
+        align-items: center;
+        padding: 25px;
+    }
+
+    .v3-modal-content {
+        height: 86vh;
+        max-height: 820px;
+        border-radius: 0 !important;
+        transform: scale(0.95) translateY(20px);
+    }
+
+    .v3-modal-overlay.active .v3-modal-content {
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Sticky Modal Header */
+.v3-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 18px;
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.v3-modal-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.v3-modal-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.v3-modal-subtitle {
+    font-family: var(--font-secondary);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.v3-modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--off-white-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.v3-modal-close-btn:hover,
+.v3-modal-close-btn:active {
+    background: var(--primary-red);
+    color: #FFFFFF;
+    border-color: var(--primary-red);
+}
+
+/* Modal Body Scrollable Area */
+.v3-modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 16px 40px 16px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* --- 3. V3 TAB SWITCHERS --- */
+.v3-tab-container {
+    display: flex;
+    gap: 4px;
+    background: #FFFFFF;
+    padding: 4px;
+    border: 1px solid var(--border-color);
+    border-radius: 0 !important;
+    margin-bottom: 16px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.v3-tab-btn {
+    flex: 1 1 0px;
+    min-width: 0;
+    padding: 8px 3px;
+    background: transparent;
+    border: none;
+    border-radius: 0 !important;
+    font-family: var(--font-primary);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    white-space: normal;
+    word-break: normal;
+    overflow: visible;
+    text-overflow: clip;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    min-height: 38px;
+}
+
+.v3-tab-btn.active {
+    background: var(--primary-red);
+    color: #FFFFFF;
+    box-shadow: 0 3px 10px rgba(197, 27, 39, 0.25);
+}
+
+/* --- 4. V3 CARD GRIDS IN MODALS --- */
+.v3-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.v3-grid-1col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Collection / Event Item Card */
+.v3-product-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 0 !important;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.v3-product-card:active,
+.v3-product-card:hover {
+    border-color: var(--primary-red);
+    
+    box-shadow: 0 8px 20px rgba(197, 27, 39, 0.08);
+}
+
+.v3-product-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #F4F3EF;
+    overflow: hidden;
+}
+
+.v3-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.v3-product-card:hover .v3-product-img {
+    transform: scale(1.03);
+}
+
+.v3-product-footer {
+    padding: 10px 8px;
+    background: #FFFFFF;
+    text-align: center;
+    border-top: 1px solid #F0ECE6;
+}
+
+.v3-product-ref {
+    font-family: var(--font-primary);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+}
+
+.v3-badge-new {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: var(--primary-red);
+    color: #FFFFFF;
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 6px;
+    z-index: 2;
+    border-radius: 0 !important;
+}
+
+.v3-badge-multi {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(17, 17, 17, 0.75);
+    color: #FFFFFF;
+    font-family: var(--font-secondary);
+    font-size: 0.62rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 0 !important;
+    z-index: 2;
+}
+
+/* Material Spec Card in Modal */
+.v3-material-card {
+    display: flex;
+    gap: 14px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    align-items: stretch;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 0 !important;
+}
+
+.v3-material-card:active,
+.v3-material-card:hover {
+    border-color: var(--primary-red);
+    
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.v3-mat-img-wrap {
+    width: 85px;
+    align-self: stretch;
+    flex-shrink: 0;
+    background: #F4F3EF;
+    border: 1px solid var(--border-color);
+    border-radius: 0 !important;
+    overflow: hidden;
+    display: flex;
+}
+
+.v3-mat-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.v3-mat-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.v3-mat-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.v3-mat-title {
+    font-family: var(--font-primary);
+    font-size: 0.90rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    line-height: 1;
+}
+
+.v3-mat-badges-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.v3-mat-badge-img {
+    height: 22px;
+    max-height: 24px;
+    width: auto;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.v3-mat-desc {
+    font-family: var(--font-secondary);
+    font-size: 0.74rem;
+    color: #4A4A4A;
+    line-height: 1.45;
+    margin-bottom: 6px;
+}
+
+.v3-mat-rec-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.v3-mat-rec-label {
+    font-family: var(--font-primary);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--primary-red);
+}
+
+.v3-mat-rec-text {
+    font-family: var(--font-secondary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #222222;
+    line-height: 1.35;
+}
+
+/* Spec Illustrated Card (Cutting, Neck, Printing, Size) */
+.v3-spec-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 0 !important;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.v3-spec-card:active,
+.v3-spec-card:hover {
+    border-color: var(--primary-red);
+    
+    box-shadow: 0 6px 18px rgba(197, 27, 39, 0.08);
+}
+
+.v3-spec-img-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.v3-spec-img-wrap.wide {
+    aspect-ratio: 16 / 9;
+}
+
+.v3-spec-img-wrap.full-chart {
+    aspect-ratio: auto;
+    min-height: 200px;
+}
+
+.v3-spec-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.v3-spec-footer {
+    padding: 10px 8px;
+    background: #FFFFFF;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.v3-spec-title {
+    font-family: var(--font-primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-dark);
+    display: block;
+}
+
+/* --- 5. MINIMALIST PAGINATION IN MODAL --- */
+.v3-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+    padding: 10px 0;
+}
+
+.v3-page-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    height: 38px;
+    padding: 0 12px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.v3-page-btn:hover:not(:disabled),
+.v3-page-btn:active:not(:disabled) {
+    background: var(--primary-red);
+    color: #FFFFFF;
+    border-color: var(--primary-red);
+}
+
+
+.v3-page-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.v3-page-info {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+/* Master Lightbox Overlay Layering */
+#lightboxOverlay.lightbox-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 999999 !important;
+}
+
+.lightbox-content {
+    position: relative;
+}
+
+.lightbox-inner-nav {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: var(--text-dark) !important;
+    border: 1.5px solid var(--border-color) !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    transition: all 0.2s ease !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.lightbox-inner-nav svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.lightbox-inner-nav:hover {
+    background: var(--primary-red) !important;
+    border-color: var(--primary-red) !important;
+    color: #ffffff !important;
+}
+
+.lightbox-inner-nav.prev { left: 10px !important; }
+.lightbox-inner-nav.next { right: 10px !important; }
+
+.v3-lightbox-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important;
+}
+
+.v3-lightbox-wrapper .lightbox-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+/* Large Lightbox Modifier on Phone View — Specifically for Printing Details & Carta Saiz */
+.v3-lightbox-wrapper.v3-lightbox-large {
+    max-width: 96vw !important;
+    width: 96vw !important;
+}
+
+.v3-lightbox-wrapper.v3-lightbox-large .lightbox-content img {
+    max-height: 76vh !important;
+    max-height: 76dvh !important;
+    object-fit: contain !important;
+}
+
+.v3-lightbox-hint-outside {
+    font-family: var(--font-secondary) !important;
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    letter-spacing: 1px !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+    user-select: none !important;
+    pointer-events: none !important;
+    text-transform: uppercase !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.v3-lightbox-details {
+    margin-top: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background: #FAF9F6;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    padding: 10px 14px 14px;
+}
+
+.v3-lightbox-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 2px;
+}
+
+.v3-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D5D5D5;
+    transition: all 0.2s ease;
+}
+
+.v3-dot.active {
+    width: 18px;
+    border-radius: 4px;
+    background: var(--primary-red);
+}
+
+.lightbox-ref-display {
+    font-family: var(--font-primary);
+    font-size: 0.86rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    text-align: center;
+    margin: 2px 0 0 0;
+}
+
+.v3-illustration-disclaimer {
+    background: var(--primary-red-light);
+    border: 1px dashed var(--primary-red);
+    padding: 7px 10px;
+    text-align: left;
+    border-radius: 0 !important;
+}
+
+.v3-disclaimer-header {
+    font-family: var(--font-primary);
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-red);
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.v3-disclaimer-text {
+    font-family: var(--font-secondary);
+    font-size: 0.68rem;
+    color: #444444;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.v3-lightbox-btn-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    margin-top: 2px;
+}
+
+
+.v3-btn-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border: 1.5px solid var(--text-dark);
+    font-family: var(--font-primary);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 0 !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.v3-btn-copy:hover,
+.v3-btn-copy:active {
+    background: var(--text-dark);
+    color: #FFFFFF;
+}
+
+.v3-btn-copy.copied {
+    background: #16a34a !important;
+    border-color: #16a34a !important;
+    color: #FFFFFF !important;
+}
+
+.v3-btn-wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--primary-red);
+    border: 1.5px solid var(--primary-red);
+    font-family: var(--font-primary);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 0 !important;
+    box-shadow: 0 4px 15px rgba(197, 27, 39, 0.2);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.v3-btn-wa:hover,
+.v3-btn-wa:active {
+    background: var(--primary-red-hover);
+    border-color: var(--primary-red-hover);
+}
+
+/* --- 7. TOAST NOTIFICATION UI --- */
+.v3-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #111111;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    max-width: 90vw;
+    text-align: center;
+}
+
+.v3-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.v3-toast-icon {
+    font-size: 1rem;
+    color: #4CAF50;
+}
+
+
+/* Custom Red Style for Collection Design Button */
+#v3BtnCollection {
+    background: var(--primary-red);
+    border-color: var(--primary-red);
+}
+#v3BtnCollection .v3-btn-hub-title,
+#v3BtnCollection .v3-btn-hub-arrow {
+    color: #FFFFFF;
+}
+#v3BtnCollection .v3-btn-hub-desc {
+    color: rgba(255, 255, 255, 0.9);
+}
+#v3BtnCollection:hover,
+#v3BtnCollection:active {
+    background: var(--primary-red-hover);
+    border-color: var(--primary-red-hover);
+}
+#v3BtnCollection:hover .v3-btn-hub-arrow,
+#v3BtnCollection:active .v3-btn-hub-arrow {
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   DESKTOP SPLIT-PANEL MODAL LAYOUT
+   Only activates on desktop (min-width: 901px)
+   Mobile/phone view: completely unaffected
+   ========================================== */
+
+@media (min-width: 901px) {
+
+    /* Body & App Container Split Layout */
+    body.desktop-modal-open {
+        overflow: hidden;
+    }
+
+    #appContainer {
+        transition: width 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+
+    #appContainer.desktop-panel-open {
+        width: 50%;
+    }
+
+    /* Desktop Side Panel: Every active v3-modal-overlay occupies the right 50% */
+    .v3-modal-overlay {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: auto !important;
+        width: 50% !important;
+        height: 100vh !important;
+        background: var(--off-white-bg, #FAFAF9) !important;
+        z-index: 8000 !important;
+        overflow: hidden !important;
+        display: none;
+        flex-direction: column !important;
+        box-shadow: -8px 0 40px rgba(0, 0, 0, 0.12) !important;
+        border-left: 1px solid var(--border-color, #E8E3DD) !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        padding: 0 !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .v3-modal-overlay.active {
+        display: flex !important;
+    }
+
+    .v3-modal-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        border-radius: 0 !important;
+        transform: none !important;
+        box-shadow: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+    }
+
+    /* ==========================================
+       DESKTOP LIGHTBOX — SPLIT HORIZONTAL LAYOUT
+       Image LEFT (60%) | Actions RIGHT (40%)
+       ========================================== */
+    .lightbox-overlay {
+        background: rgba(10, 10, 10, 0.85) !important;
+        padding: 32px 60px !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /* Hint text "Tekan mana-mana untuk close" stays visible on desktop */
+    .v3-lightbox-hint-outside {
+        display: block !important;
+        color: #FFFFFF !important;
+        font-size: 0.78rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        margin-bottom: 12px !important;
+    }
+
+    .lightbox-nav.prev { left: 30px !important; }
+    .lightbox-nav.next { right: 30px !important; }
+    .lightbox-nav { display: flex !important; }
+
+    .v3-lightbox-wrapper {
+        max-width: 1100px !important;
+        width: 90% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: stretch !important;
+        justify-content: center !important;
+        gap: 0 !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4) !important;
+        max-height: 88vh !important;
+        border: 1px solid var(--border-color, #E8E3DD) !important;
+    }
+
+    .lightbox-content {
+        flex: 1 1 60% !important;
+        max-width: 60% !important;
+        width: 60% !important;
+        max-height: none !important;
+        height: auto !important;
+        min-height: 480px !important;
+        background: #F5F4F1 !important;
+        border: none !important;
+        border-right: 1px solid var(--border-color, #E8E3DD) !important;
+        border-radius: 0 !important;
+        padding: 28px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        overflow: hidden !important;
+        box-shadow: none !important;
+    }
+
+    .lightbox-content img {
+        max-width: 100% !important;
+        max-height: 65vh !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        border: 1px solid var(--border-color, #E8E3DD) !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .v3-lightbox-details {
+        flex: 1 1 40% !important;
+        width: 40% !important;
+        max-width: 40% !important;
+        min-width: 300px !important;
+        padding: 32px 28px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 16px !important;
+        background: #FFFFFF !important;
+        border: none !important;
+    }
+
+    .lightbox-ref-display {
+        font-size: 1.05rem !important;
+        letter-spacing: 2px !important;
+        text-align: left !important;
+        margin: 0 !important;
+    }
+
+    .v3-illustration-disclaimer {
+        padding: 12px 14px !important;
+    }
+
+    .v3-disclaimer-header {
+        font-size: 0.72rem !important;
+    }
+
+    .v3-disclaimer-text {
+        font-size: 0.72rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .v3-lightbox-btn-stack {
+        gap: 10px !important;
+        margin-top: 4px !important;
+    }
+
+    .v3-btn-copy,
+    .v3-btn-wa {
+        padding: 14px 20px !important;
+        font-size: 0.78rem !important;
+        letter-spacing: 1.5px !important;
+    }
+
+    /* Single stack lightbox layout (used when item has no multi-column description) */
+    .v3-lightbox-wrapper.single-stack {
+        max-width: 680px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .v3-lightbox-wrapper.single-stack .lightbox-content {
+        flex: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        border-right: none !important;
+        border-bottom: 1px solid var(--border-color, #E8E3DD) !important;
+        padding: 24px !important;
+        min-height: auto !important;
+    }
+
+    .v3-lightbox-wrapper.single-stack .v3-lightbox-details {
+        flex: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 20px 24px !important;
+        align-items: center !important;
+        text-align: center !important;
+        background: #FFFFFF !important;
+    }
+
+    .v3-lightbox-wrapper.single-stack .lightbox-ref-display {
+        text-align: center !important;
+    }
+
+    /* Large Lightbox Modifier — Specifically for Printing Details & Carta Saiz */
+    .v3-lightbox-wrapper.v3-lightbox-large {
+        max-width: 960px !important;
+        width: 90vw !important;
+    }
+    .v3-lightbox-wrapper.v3-lightbox-large .lightbox-content {
+        padding: 32px 36px !important;
+    }
+    .v3-lightbox-wrapper.v3-lightbox-large #lightboxImg {
+        max-height: 84vh !important;
+        width: auto !important;
+        object-fit: contain !important;
+    }
+}
+
+
+

@@ -1,0 +1,882 @@
+export const catalogProducts2025 = [
+  {
+    "edition": "prod-2025",
+    "id": "For Your Own Design",
+    "image": "Image/2025/Jersey (For Your Own Design).webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0175",
+    "image": "Image/2025/25-0175.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0174",
+    "image": "Image/2025/25-0174.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0173",
+    "image": "Image/2025/25-0173.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0172",
+    "image": "Image/2025/25-0172.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0171",
+    "image": "Image/2025/25-0171.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0170",
+    "image": "Image/2025/25-0170.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0169",
+    "image": "Image/2025/25-0169.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0168",
+    "image": "Image/2025/25-0168.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0167",
+    "image": "Image/2025/25-0167.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0166",
+    "image": "Image/2025/25-0166.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0165",
+    "image": "Image/2025/25-0165.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0164",
+    "image": "Image/2025/25-0164.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0163",
+    "image": "Image/2025/25-0163.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0162",
+    "image": "Image/2025/25-0162.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0161",
+    "image": "Image/2025/25-0161.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0160",
+    "image": "Image/2025/25-0160.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0159",
+    "image": "Image/2025/25-0159.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0158",
+    "image": "Image/2025/25-0158.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0157",
+    "image": "Image/2025/25-0157.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0156",
+    "image": "Image/2025/25-0156.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0155",
+    "image": "Image/2025/25-0155.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0154",
+    "image": "Image/2025/25-0154.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0153",
+    "image": "Image/2025/25-0153.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0152",
+    "image": "Image/2025/25-0152.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0151",
+    "image": "Image/2025/25-0151.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0150",
+    "image": "Image/2025/25-0150.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0149",
+    "image": "Image/2025/25-0149.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0148",
+    "image": "Image/2025/25-0148.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0147",
+    "image": "Image/2025/25-0147.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0146",
+    "image": "Image/2025/25-0146.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0145",
+    "image": "Image/2025/25-0145.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0144",
+    "image": "Image/2025/25-0144.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0143",
+    "image": "Image/2025/25-0143.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0142",
+    "image": "Image/2025/25-0142.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0141",
+    "image": "Image/2025/25-0141.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0140",
+    "image": "Image/2025/25-0140.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0139",
+    "image": "Image/2025/25-0139.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0138",
+    "image": "Image/2025/25-0138.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0137",
+    "image": "Image/2025/25-0137.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0136",
+    "image": "Image/2025/25-0136.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0135",
+    "image": "Image/2025/25-0135.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0134",
+    "image": "Image/2025/25-0134.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0133",
+    "image": "Image/2025/25-0133.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0132",
+    "image": "Image/2025/25-0132.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0131",
+    "image": "Image/2025/25-0131.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0130",
+    "image": "Image/2025/25-0130.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0129",
+    "image": "Image/2025/25-0129.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0128",
+    "image": "Image/2025/25-0128.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0127",
+    "image": "Image/2025/25-0127.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0126",
+    "image": "Image/2025/25-0126.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0125",
+    "image": "Image/2025/25-0125.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0124",
+    "image": "Image/2025/25-0124.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0123",
+    "image": "Image/2025/25-0123.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0122",
+    "image": "Image/2025/25-0122.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0121",
+    "image": "Image/2025/25-0121.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0120",
+    "image": "Image/2025/25-0120.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0119",
+    "image": "Image/2025/25-0119.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0118",
+    "image": "Image/2025/25-0118.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0117",
+    "image": "Image/2025/25-0117.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0116",
+    "image": "Image/2025/25-0116.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0115",
+    "image": "Image/2025/25-0115.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0114",
+    "image": "Image/2025/25-0114.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0113",
+    "image": "Image/2025/25-0113.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0112",
+    "image": "Image/2025/25-0112.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0111",
+    "image": "Image/2025/25-0111.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0110",
+    "image": "Image/2025/25-0110.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0109",
+    "image": "Image/2025/25-0109.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0108",
+    "image": "Image/2025/25-0108.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0107",
+    "image": "Image/2025/25-0107.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0106",
+    "image": "Image/2025/25-0106.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0105",
+    "image": "Image/2025/25-0105.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0104",
+    "image": "Image/2025/25-0104.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0103",
+    "image": "Image/2025/25-0103.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0102",
+    "image": "Image/2025/25-0102.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0101",
+    "image": "Image/2025/25-0101.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0100",
+    "image": "Image/2025/25-0100.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0099",
+    "image": "Image/2025/25-0099.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0098",
+    "image": "Image/2025/25-0098.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0097",
+    "image": "Image/2025/25-0097.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0096",
+    "image": "Image/2025/25-0096.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0095",
+    "image": "Image/2025/25-0095.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0094",
+    "image": "Image/2025/25-0094.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0093",
+    "image": "Image/2025/25-0093.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0092",
+    "image": "Image/2025/25-0092.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0091",
+    "image": "Image/2025/25-0091.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0090",
+    "image": "Image/2025/25-0090.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0089",
+    "image": "Image/2025/25-0089.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0088",
+    "image": "Image/2025/25-0088.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0087",
+    "image": "Image/2025/25-0087.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0086",
+    "image": "Image/2025/25-0086.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0085",
+    "image": "Image/2025/25-0085.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0084",
+    "image": "Image/2025/25-0084.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0083",
+    "image": "Image/2025/25-0083.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0082",
+    "image": "Image/2025/25-0082.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0081",
+    "image": "Image/2025/25-0081.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0080",
+    "image": "Image/2025/25-0080.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0079",
+    "image": "Image/2025/25-0079.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0078",
+    "image": "Image/2025/25-0078.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0077",
+    "image": "Image/2025/25-0077.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0076",
+    "image": "Image/2025/25-0076.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0075",
+    "image": "Image/2025/25-0075.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0074",
+    "image": "Image/2025/25-0074.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0073",
+    "image": "Image/2025/25-0073.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0072",
+    "image": "Image/2025/25-0072.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0071",
+    "image": "Image/2025/25-0071.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0070",
+    "image": "Image/2025/25-0070.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0069",
+    "image": "Image/2025/25-0069.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0068",
+    "image": "Image/2025/25-0068.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0067",
+    "image": "Image/2025/25-0067.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0066",
+    "image": "Image/2025/25-0066.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0065",
+    "image": "Image/2025/25-0065.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0064",
+    "image": "Image/2025/25-0064.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0063",
+    "image": "Image/2025/25-0063.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0062",
+    "image": "Image/2025/25-0062.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0061",
+    "image": "Image/2025/25-0061.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0060",
+    "image": "Image/2025/25-0060.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0059",
+    "image": "Image/2025/25-0059.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0058",
+    "image": "Image/2025/25-0058.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0057",
+    "image": "Image/2025/25-0057.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0056",
+    "image": "Image/2025/25-0056.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0055",
+    "image": "Image/2025/25-0055.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0054",
+    "image": "Image/2025/25-0054.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0053",
+    "image": "Image/2025/25-0053.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0052",
+    "image": "Image/2025/25-0052.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0051",
+    "image": "Image/2025/25-0051.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0050",
+    "image": "Image/2025/25-0050.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0049",
+    "image": "Image/2025/25-0049.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0048",
+    "image": "Image/2025/25-0048.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0047",
+    "image": "Image/2025/25-0047.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0046",
+    "image": "Image/2025/25-0046.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0045",
+    "image": "Image/2025/25-0045.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0044",
+    "image": "Image/2025/25-0044.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0043",
+    "image": "Image/2025/25-0043.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0042",
+    "image": "Image/2025/25-0042.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0041",
+    "image": "Image/2025/25-0041.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0040",
+    "image": "Image/2025/25-0040.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0039",
+    "image": "Image/2025/25-0039.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0038",
+    "image": "Image/2025/25-0038.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0037",
+    "image": "Image/2025/25-0037.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0036",
+    "image": "Image/2025/25-0036.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0035",
+    "image": "Image/2025/25-0035.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0034",
+    "image": "Image/2025/25-0034.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0033",
+    "image": "Image/2025/25-0033.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0032",
+    "image": "Image/2025/25-0032.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0031",
+    "image": "Image/2025/25-0031.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0030",
+    "image": "Image/2025/25-0030.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0029",
+    "image": "Image/2025/25-0029.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0028",
+    "image": "Image/2025/25-0028.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0027",
+    "image": "Image/2025/25-0027.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0026",
+    "image": "Image/2025/25-0026.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0025",
+    "image": "Image/2025/25-0025.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0024",
+    "image": "Image/2025/25-0024.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0023",
+    "image": "Image/2025/25-0023.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0022",
+    "image": "Image/2025/25-0022.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0021",
+    "image": "Image/2025/25-0021.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0020",
+    "image": "Image/2025/25-0020.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0019",
+    "image": "Image/2025/25-0019.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0018",
+    "image": "Image/2025/25-0018.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0017",
+    "image": "Image/2025/25-0017.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0016",
+    "image": "Image/2025/25-0016.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0015",
+    "image": "Image/2025/25-0015.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0014",
+    "image": "Image/2025/25-0014.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0013",
+    "image": "Image/2025/25-0013.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0012",
+    "image": "Image/2025/25-0012.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0011",
+    "image": "Image/2025/25-0011.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0010",
+    "image": "Image/2025/25-0010.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0009",
+    "image": "Image/2025/25-0009.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0008",
+    "image": "Image/2025/25-0008.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0007",
+    "image": "Image/2025/25-0007.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0006",
+    "image": "Image/2025/25-0006.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0005",
+    "image": "Image/2025/25-0005.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0004",
+    "image": "Image/2025/25-0004.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0003",
+    "image": "Image/2025/25-0003.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0002",
+    "image": "Image/2025/25-0002.webp"
+  },
+  {
+    "edition": "prod-2025",
+    "id": "25-0001",
+    "image": "Image/2025/25-0001.webp"
+  }
+];

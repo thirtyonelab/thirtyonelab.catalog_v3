@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amnhmb.github.io/thirtyonelabcatalog/sitemap.xml

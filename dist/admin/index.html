@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - ThirtyOne Lab</title>
+    <link rel="icon" type="image/jpeg" href="../Image/Favicon/Favicon Tab.webp">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS Stylesheet -->
+  <script type="module" crossorigin src="/testing/assets/admin-DmHWMLa0.js"></script>
+  <link rel="modulepreload" crossorigin href="/testing/assets/modulepreload-polyfill-Dezn_h7o.js">
+  <link rel="modulepreload" crossorigin href="/testing/assets/catalogEvent-CKjKjmZY.js">
+  <link rel="stylesheet" crossorigin href="/testing/assets/admin-r39xkpkp.css">
+<link rel="manifest" href="/testing/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/testing/registerSW.js"></script></head>
+<body>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- 1. LOGIN SCREEN -->
+    <div id="loginPage" class="login-page">
+        <div class="login-card">
+            <img src="../Image/Favicon/Logo Favicon.webp" alt="ThirtyOne Lab Logo" class="login-logo">
+            <h1 class="login-title">ThirtyOne Lab</h1>
+            <p class="login-subtitle">Admin Portal</p>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="admin@thirtyonelab.com" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn-primary">Log In</button>
+                <div id="loginError" class="error-message d-none"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. DASHBOARD LAYOUT (Hidden on load) -->
+    <div id="adminLayout" class="admin-layout d-none">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-container">
+                <div class="header-logo-section">
+                    <img src="../Image/Favicon/Logo Favicon.webp" alt="ThirtyOne Lab Logo" class="header-logo">
+                    <h2 class="header-title-section">ThirtyOne <span>Lab</span> Admin</h2>
+                </div>
+                <button id="signOutBtn" class="btn-signout">Sign Out</button>
+            </div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="dashboard-main">
+            <!-- Stats -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <span class="label">Total Products</span>
+                    <span id="statTotal" class="value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">2026 Edition</span>
+                    <span id="stat2026" class="value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">2025 Edition</span>
+                    <span id="stat2025" class="value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Event Edition</span>
+                    <span id="statEvent" class="value">0</span>
+                </div>
+            </section>
+
+            <!-- Toolbar & Controls -->
+            <section class="toolbar-section">
+                <div class="search-filter-group">
+                    <input type="text" id="searchInput" class="form-control search-input" placeholder="Search by Product ID...">
+                    <select id="filterSelect" class="filter-select">
+                        <option value="all">All Editions</option>
+                        <option value="prod-2026">2026 Edition</option>
+                        <option value="prod-2025">2025 Edition</option>
+                        <option value="prod-event">Event Edition</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button type="button" id="editHeroBtn" class="btn-primary" style="background: var(--card-bg, #1a1a1a); color: var(--text-main, #ffffff); border: 1px solid var(--border-color, #333333);">Hero Page Media</button>
+                    <button type="button" id="addProductBtn" class="btn-primary btn-add-product">Add Catalog Item</button>
+                </div>
+            </section>
+
+            <!-- Catalog Items Grid -->
+            <section id="catalogGrid" class="admin-catalog-grid">
+                <!-- Loaded dynamically by admin.js -->
+            </section>
+
+            <!-- Pagination Container -->
+            <div id="paginationContainer" class="admin-pagination-container"></div>
+        </main>
+    </div>
+
+    <!-- 3. PRODUCT MODAL (Add / Edit) -->
+    <div id="productModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle" class="modal-title">Add Catalog Item</h3>
+                <button id="closeModalBtn" class="btn-modal-close">&times;</button>
+            </div>
+            
+            <form id="productForm">
+                <div class="modal-body">
+                    <!-- Product ID -->
+                    <div class="form-group">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;">
+                            <label for="productId" style="margin-bottom: 0; flex-shrink: 0;">Product ID *</label>
+                            <span id="latestIdHint" style="display: flex; justify-content: flex-end; align-items: flex-start; text-align: right; font-size: 0.75rem; font-weight: 700; max-width: 70%;">
+                                <span style="color: var(--text-muted); margin-right: 4px; white-space: nowrap;">Latest ID:</span>
+                                <span id="latestIdVal" style="color: var(--primary-red, #C51B27); word-break: break-all; text-align: left;">-</span>
+                            </span>
+                        </div>
+                        <input type="text" id="productId" class="form-control" placeholder="e.g. Year-Code [ 26-0123]" required>
+                    </div>
+
+                    <!-- Edition -->
+                    <div class="form-group">
+                        <label for="productEdition">Edition *</label>
+                        <select id="productEdition" class="form-control" required>
+                            <option value="prod-2026">2026 Edition (prod-2026)</option>
+                            <option value="prod-2025">2025 Edition (prod-2025)</option>
+                            <option value="prod-event">Event Edition (prod-event)</option>
+                        </select>
+                    </div>
+
+                    <!-- Event Tag (Only shown when Edition is Event) -->
+                    <div id="eventTagGroup" class="form-group d-none">
+                        <label for="productEventTagSelect">Event Tag (e.g. World Cup, Merdeka)</label>
+                        <select id="productEventTagSelect" class="form-control" style="margin-bottom: 8px;">
+                            <option value="World Cup">World Cup</option>
+                            <option value="Merdeka">Merdeka</option>
+                            <option value="custom">Custom Tag...</option>
+                            <option value="">No Tag (None)</option>
+                        </select>
+                        <input type="text" id="productEventTagCustom" class="form-control d-none" placeholder="Enter custom event tag name...">
+                    </div>
+
+                    <!-- Flags -->
+                    <div class="form-checkbox-group">
+                        <input type="checkbox" id="productIsNew">
+                        <label for="productIsNew">Mark as "New" badge</label>
+                    </div>
+                    <div class="form-checkbox-group">
+                        <input type="checkbox" id="productNoSlide">
+                        <label for="productNoSlide">Enable Slide Show</label>
+                    </div>
+
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 20px 0;">
+
+                    <!-- Main Image Upload -->
+                    <div class="form-group">
+                        <label>Main Image *</label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="mainImageFile" accept="image/*">
+                            <p class="file-upload-text">Drag & drop main image here, or <span>browse</span></p>
+                        </div>
+                        
+                        <!-- Upload progress -->
+                        <div id="mainProgressContainer" class="upload-progress-container">
+                            <div id="mainProgressBar" class="upload-progress-bar"></div>
+                        </div>
+
+                        <!-- Fallback URL -->
+                        <input type="text" id="mainImageUrl" class="form-control" placeholder="Or paste main image URL directly (e.g. /Image/2026/...)">
+                        <div id="mainImagePreviewArea" class="image-preview-area"></div>
+                    </div>
+
+                    <!-- Additional Images Upload (Especially for Event multiple photos) -->
+                    <div class="form-group">
+                        <label>Additional Images (Optional)</label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="additionalImagesFile" accept="image/*" multiple>
+                            <p class="file-upload-text">Drag & drop multiple additional images, or <span>browse</span></p>
+                        </div>
+
+                        <!-- Upload progress -->
+                        <div id="additionalProgressContainer" class="upload-progress-container">
+                            <div id="additionalProgressBar" class="upload-progress-bar"></div>
+                        </div>
+
+                        <!-- Fallback URL (JSON/Comma separated list) -->
+                        <textarea id="additionalImagesUrls" class="form-control" placeholder="Or paste additional image URLs, one per line" rows="3"></textarea>
+                        <div id="additionalImagesPreviewArea" class="image-preview-area"></div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" id="cancelModalBtn" class="btn-secondary">Cancel</button>
+                    <button type="submit" class="btn-primary" style="width: auto;">Save Catalog Item</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 4. HERO SETTINGS MODAL (Edit Photo / Video for Hero Page) -->
+    <div id="heroModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Edit Hero Page Media</h3>
+                <button type="button" id="closeHeroModalBtn" class="btn-modal-close">&times;</button>
+            </div>
+            
+            <form id="heroForm">
+                <div class="modal-body">
+                    <!-- Media Type Selection -->
+                    <div class="form-group">
+                        <label for="heroMediaType">Media Type *</label>
+                        <select id="heroMediaType" class="filter-select" style="width: 100%;">
+                            <option value="video">Background Video</option>
+                            <option value="image">Background Photo / Image</option>
+                        </select>
+                    </div>
+
+                    <!-- Main Hero Media Upload / URL -->
+                    <div class="form-group">
+                        <label id="heroMediaLabel">Hero Media (Video / Photo) *</label>
+                        <div id="heroDropZone" class="file-drop-zone">
+                            <p style="margin: 0;">Drag & drop media file here, or <button type="button" id="heroBrowseBtn" class="btn-browse">BROWSE</button></p>
+                            <input type="file" id="heroFileInput" class="d-none" accept="image/*,video/*">
+                        </div>
+                        <input type="text" id="heroMediaUrlInput" class="form-control" placeholder="Image/Hero Page/Hero Page.webp or URL..." style="margin-top: 10px;">
+                        <div id="heroPreviewArea" class="image-preview-area" style="margin-top: 10px;"></div>
+                    </div>
+
+                    <!-- Optional Poster Image (for Video) -->
+                    <div id="heroPosterGroup" class="form-group">
+                        <label for="heroPosterUrlInput">Poster Image (Optional Video Placeholder / Mobile Preview)</label>
+                        <input type="text" id="heroPosterUrlInput" class="form-control" placeholder="Poster image URL...">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" id="cancelHeroModalBtn" class="btn-secondary">Cancel</button>
+                    <button type="submit" id="saveHeroBtn" class="btn-primary" style="width: auto;">Save Hero Settings</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS Controllers -->
+</body>
+</html>

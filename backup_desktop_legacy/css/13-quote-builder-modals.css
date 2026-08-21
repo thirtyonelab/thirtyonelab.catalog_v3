@@ -1,0 +1,240 @@
+/* --- 13. QUOTE BUILDER MODALS --- */
+.quote-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    overflow-y: auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.quote-modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.quote-modal-content {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 24px 30px;
+    width: 100%;
+    max-width: 520px;
+    position: relative;
+    color: var(--text-dark);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.06);
+    margin: auto 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Own design specific sizing */
+.quote-modal-content--own {
+    max-width: 780px;
+}
+
+.quote-modal-content h2 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+    text-transform: none;
+}
+
+#quoteProgress, #quoteProgressOwn {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-red);
+    margin-bottom: 30px;
+}
+
+.quote-modal-content .lightbox-close {
+    top: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+}
+
+/* Step headings & layout */
+.quote-step {
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.quote-step h3 {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+/* Custom form elements inside modal */
+.quote-step input[type="number"],
+.quote-step select {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--off-white-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    border-radius: 0;
+    outline: none;
+    transition: var(--transition);
+}
+
+.quote-step input[type="number"]:focus,
+.quote-step select:focus {
+    border-color: var(--primary-red);
+    background-color: var(--white);
+}
+
+.quote-step label {
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+/* Modern Radio Buttons styling */
+.quote-step input[type="radio"] {
+    accent-color: var(--primary-red);
+    margin-right: 6px;
+}
+
+/* Navigation buttons in modals */
+.qb-next, .qb-prev, .qb-own-next, .qb-own-prev {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 12px 24px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qb-next, .qb-own-next {
+    background-color: var(--text-dark);
+    color: var(--white);
+    border: 1px solid var(--text-dark);
+}
+
+.qb-next:hover, .qb-own-next:hover {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.qb-prev, .qb-own-prev {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    margin-right: 10px;
+}
+
+.qb-prev:hover, .qb-own-prev:hover {
+    border-color: var(--text-dark);
+    color: var(--text-dark);
+}
+
+.quote-action-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.quote-action-row .qb-prev,
+.quote-action-row .qb-own-prev {
+    flex: 1;
+    margin-right: 0 !important;
+}
+
+.quote-action-row .qb-next,
+.quote-action-row .qb-own-next,
+.quote-action-row .lightbox-wa-btn {
+    flex: 2;
+}
+
+@media (max-width: 500px) {
+    .quote-action-row {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    
+    .quote-action-row .qb-prev,
+    .quote-action-row .qb-own-prev,
+    .quote-action-row .qb-next,
+    .quote-action-row .qb-own-next,
+    .quote-action-row .lightbox-wa-btn {
+        width: 100% !important;
+        flex: none !important;
+        padding: 14px 20px !important;
+        font-size: 0.8rem !important;
+        min-height: 48px;
+    }
+}
+
+/* Sleeve configuration table inside quote modals */
+.sleeve-table {
+    margin-top: 15px;
+    margin-bottom: 24px;
+}
+
+.sleeve-table th {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.sleeve-table td {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: 0.85rem;
+}
+
+/* Summary Review styling */
+#step8 p, #stepOwn8 p {
+    font-size: 0.9rem;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+#step8 p strong, #stepOwn8 p strong {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+

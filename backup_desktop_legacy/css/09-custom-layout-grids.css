@@ -1,0 +1,221 @@
+/* --- 9. CUSTOM LAYOUT GRIDS --- */
+
+/* Nameset, Sponsor and Size Charts display (Split into 2 wide columns) */
+.catalog-grid.grid-nameset-layout,
+.catalog-grid.grid-sponsor-layout,
+.catalog-grid.grid-sizechart-layout {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px !important;
+}
+
+.catalog-grid.grid-nameset-layout .product-card.prod-nameset,
+.catalog-grid.grid-sponsor-layout .product-card.prod-sponsor {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    cursor: default !important;
+    transform: none !important;
+}
+
+.nameset-image-block, .sponsor-image-block, .sizechart-image-block, .placementguide-image-block {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+}
+
+.nameset-image-block img, .sponsor-image-block img, .sizechart-image-block img, .placementguide-image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Placement guide single centered column */
+.catalog-grid.grid-placementguide-layout {
+    grid-template-columns: 1fr !important;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Neck and Material custom bento grids */
+.catalog-grid.grid-neck-layout,
+.catalog-grid.grid-cutting-layout {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+}
+
+.catalog-grid.grid-neck-layout .product-card.prod-neck,
+.catalog-grid.grid-cutting-layout .product-card.prod-cutting {
+    display: flex !important;
+    flex-direction: column;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 !important;
+    background-color: var(--white) !important;
+    width: 100%;
+    cursor: pointer !important;
+}
+
+.catalog-grid.grid-neck-layout .product-card.prod-neck:hover,
+.catalog-grid.grid-cutting-layout .product-card.prod-cutting:hover {
+    border-color: var(--primary-red) !important;
+    
+}
+
+.product-card.prod-neck .neck-image-wrapper,
+.product-card.prod-cutting .neck-image-wrapper {
+    position: relative;
+    aspect-ratio: 5 / 4;
+    padding-top: 80%;
+    background-color: #F6F5F2;
+    overflow: hidden;
+}
+
+.product-card.prod-neck .neck-image,
+.product-card.prod-neck .neck-image-button,
+.product-card.prod-cutting .neck-image,
+.product-card.prod-cutting .neck-image-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card.prod-neck .neck-content,
+.product-card.prod-cutting .neck-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--white);
+}
+
+.product-card.prod-neck .neck-title-container,
+.product-card.prod-cutting .neck-title-container {
+    background-color: var(--off-white-bg);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.product-card.prod-neck .neck-title,
+.product-card.prod-cutting .neck-title {
+    color: var(--text-dark);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Material Layout Grid */
+.catalog-grid.grid-material-layout {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+}
+
+.catalog-grid.grid-material-layout .product-card.prod-material {
+    display: flex !important;
+    flex-direction: column;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 !important;
+    background-color: var(--white) !important;
+    cursor: default !important;
+}
+
+.catalog-grid.grid-material-layout .product-card.prod-material:hover {
+    border-color: var(--primary-red) !important;
+    
+}
+
+.product-card.prod-material .card-image-wrapper {
+    position: relative;
+    padding-top: 110%;
+    overflow: hidden;
+    background-color: #F6F5F2;
+}
+
+.product-card.prod-material .card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card.prod-material .card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.product-card.prod-material .header-inline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.product-card.prod-material .material-title {
+    color: var(--text-dark);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.product-card.prod-material .collection-name {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.product-card.prod-material .stats-container {
+    background-color: var(--off-white-bg);
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+}
+
+.product-card.prod-material .stat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-card.prod-material .stat-label {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-red);
+}
+
+.product-card.prod-material .stat-value {
+    color: var(--text-dark);
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.product-card.prod-material .stat-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    margin-left: 2px;
+}
+
