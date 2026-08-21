@@ -1,0 +1,25 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f4f4f5" />
+  
+  <!-- Outer Border (WhatsApp Banner boundary) -->
+  <rect width="1200" height="630" fill="none" stroke="#ef4444" stroke-width="8" />
+  
+  <!-- Horizontal Center Line -->
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#3b82f6" stroke-width="2" stroke-dasharray="15,10" />
+  
+  <!-- Vertical Center Line -->
+  <line x1="600" y1="0" x2="600" y2="630" stroke="#3b82f6" stroke-width="2" stroke-dasharray="15,10" />
+  
+  <!-- Safe Zone Box -->
+  <rect x="300" y="150" width="600" height="330" fill="rgba(34, 197, 94, 0.15)" stroke="#22c55e" stroke-width="4" stroke-dasharray="10,5" />
+  
+  <!-- Text Guidelines -->
+  <text x="600" y="270" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#1f2937" text-anchor="middle">ZON SELAMAT (CENTER)</text>
+  <text x="600" y="325" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#4b5563" text-anchor="middle">Titik Tengah Sebenar</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="22" fill="#6b7280" text-anchor="middle">Letakkan Logo/Teks utama di dalam petak hijau ini</text>
+  
+  <!-- Dimension Text at corners -->
+  <text x="20" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ef4444">1200px</text>
+  <text x="1110" y="610" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ef4444">630px</text>
+</svg>
