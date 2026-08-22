@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThirtyOne Lab | Link Tree</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/webp" href="/Image/Favicon/Favicon Web.webp">
     
     <!-- Google Fonts -->
@@ -24,6 +23,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -34,11 +34,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url('../Image/Favicon/bg_linktree.webp');
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Image/Favicon/bg_linktree.webp');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             background-repeat: no-repeat;
+            z-index: -2;
         }
 
         /* Overlay to ensure text readability if background is busy */
@@ -172,7 +181,8 @@
         footer {
             margin-top: auto;
             padding: 40px 0 20px;
-            font-size: 13px;
+            font-size: 0.6rem;
+            letter-spacing: 0.5px;
             color: #888;
             font-weight: 500;
             text-align: center;
@@ -208,7 +218,7 @@
     <div class="container">
         <!-- Logo -->
         <div class="logo-container animate-fade-in">
-            <img src="../Image/Favicon/Logo_31_White.webp" alt="ThirtyOne Lab Logo">
+            <img src="Image/Favicon/Logo_31_White.webp" alt="ThirtyOne Lab Logo">
         </div>
 
         <!-- Title & Subtitle -->
@@ -220,35 +230,35 @@
             
             <a href="https://31lab.pages.dev" class="link-card animate-fade-in delay-1" target="_blank" rel="noopener noreferrer">
                 <div class="link-icon">
-                    <img src="../Image/Favicon/Logo Favicon.webp" alt="Website">
+                    <img src="Image/Favicon/Logo Favicon.webp" alt="Website">
                 </div>
                 <span class="link-text">Website Catalog</span>
             </a>
 
             <a href="https://wa.me/601125614436" class="link-card animate-fade-in delay-2" target="_blank" rel="noopener noreferrer">
                 <div class="link-icon">
-                    <img src="../Image/Favicon/Favicon WhatsApp.webp" alt="WhatsApp">
+                    <img src="Image/Favicon/Favicon WhatsApp.webp" alt="WhatsApp">
                 </div>
                 <span class="link-text">Order via WhatsApp</span>
             </a>
 
             <a href="https://www.instagram.com/thirtyonelab" class="link-card animate-fade-in delay-3" target="_blank" rel="noopener noreferrer">
                 <div class="link-icon">
-                    <img src="../Image/Favicon/Favicon IG.webp" alt="Instagram">
+                    <img src="Image/Favicon/Favicon IG.webp" alt="Instagram">
                 </div>
                 <span class="link-text">Instagram</span>
             </a>
 
             <a href="https://www.tiktok.com/@thirtyonelabofficial" class="link-card animate-fade-in delay-4" target="_blank" rel="noopener noreferrer">
                 <div class="link-icon">
-                    <img src="../Image/Favicon/Favicon Tiktok.webp" alt="TikTok">
+                    <img src="Image/Favicon/Favicon Tiktok.webp" alt="TikTok">
                 </div>
                 <span class="link-text">TikTok</span>
             </a>
 
             <a href="https://www.facebook.com/thirtyonelab" class="link-card animate-fade-in delay-5" target="_blank" rel="noopener noreferrer">
                 <div class="link-icon">
-                    <img src="../Image/Favicon/Favicon FB.webp" alt="Facebook">
+                    <img src="Image/Favicon/Favicon FB.webp" alt="Facebook">
                 </div>
                 <span class="link-text">Facebook</span>
             </a>

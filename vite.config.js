@@ -44,7 +44,7 @@ export default defineConfig({
         about: resolve(__dirname, 'src/about.html'),
         contact: resolve(__dirname, 'src/contact.html'),
         admin: resolve(__dirname, 'src/admin/index.html'),
-        links: resolve(__dirname, 'src/links/index.html'),
+        links: resolve(__dirname, 'src/links.html'),
       },
     },
   },
