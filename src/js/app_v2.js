@@ -3,7 +3,7 @@ import { i18nTranslations } from './translations.js';
 import { configData } from './config.js';
 import { catalogProducts2026 } from './catalog2026.js';
 import { catalogProducts2025 } from './catalog2025.js';
-// Dynamically imported catalogEvent
+import { catalogProductsEvent } from './catalogEvent.js';
 import { catalogProductsSpecs } from './catalogSpecs.js';
 import { catalogProducts, generateHtmlForProduct, encodeUrl, resolveImagePath } from './catalogData.js';
 import { quoteSelectionsOwn, openQuoteBuilderOwn } from './appOwn_v2.js';
