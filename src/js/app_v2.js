@@ -1,3 +1,4 @@
+import './errorReporter.js';
 // Dynamically imported supabaseClient
 import { i18nTranslations } from './translations.js';
 import { configData } from './config.js';
