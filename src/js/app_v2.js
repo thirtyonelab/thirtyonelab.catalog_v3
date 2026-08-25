@@ -1,9 +1,9 @@
-import { supabase } from '../supabaseClient.js';
+// Dynamically imported supabaseClient
 import { i18nTranslations } from './translations.js';
 import { configData } from './config.js';
 import { catalogProducts2026 } from './catalog2026.js';
 import { catalogProducts2025 } from './catalog2025.js';
-import { catalogProductsEvent } from './catalogEvent.js';
+// Dynamically imported catalogEvent
 import { catalogProductsSpecs } from './catalogSpecs.js';
 import { catalogProducts, generateHtmlForProduct, encodeUrl, resolveImagePath } from './catalogData.js';
 import { quoteSelectionsOwn, openQuoteBuilderOwn } from './appOwn_v2.js';
@@ -162,6 +162,7 @@ if (document.readyState === 'loading') {
 // Non-blocking database sync in the background
 async function syncDatabaseProducts() {
     try {
+        const { supabase } = await import('../supabaseClient.js');
         if (!supabase) return;
         const { data: dbProducts, error } = await supabase
             .from('products')
@@ -237,6 +238,7 @@ syncDatabaseProducts();
 
 async function initDynamicHeroMedia() {
     try {
+        const { supabase } = await import('../supabaseClient.js');
         if (!supabase) return;
         const { data, error } = await supabase
             .from('products')
@@ -449,7 +451,7 @@ function renderV3Collection(year, page) {
             <div class="v3-product-card" onclick="openV3LightboxFromCard('${refEsc}', 'collection', '${imgEsc}')">
                 <div class="v3-product-img-wrap">
                     ${isNew ? '<span class="v3-badge-new">New</span>' : ''}
-                    <img src="${imgSrc}" alt="${ref}" class="v3-product-img" loading="lazy">
+                    <picture><source srcset="${imgSrc.replace('.webp', '-400.webp')} 400w, ${imgSrc.replace('.webp', '.webp')} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${imgSrc.replace('.webp', '.jpg')}" alt="${ref}" class="v3-product-img" loading="lazy"></picture>
                 </div>
                 <div class="v3-product-footer">
                     <span class="v3-product-ref">${ref}</span>
@@ -476,13 +478,22 @@ function renderV3Collection(year, page) {
 window.renderV3Collection = renderV3Collection;
 
 // Render Event Grid
-function renderV3Event() {
+async function renderV3Event() {
     const gridEl = document.getElementById('v3EventGrid');
     if (!gridEl) return;
 
     let list = (typeof products !== 'undefined' && products && products.length > 0)
         ? products.filter(p => p.edition === 'prod-event' && p.id !== 'For Your Own Design')
-        : catalogProductsEvent;
+        : [];
+
+    if (list.length === 0) {
+        try {
+            const { catalogProductsEvent } = await import('./catalogEvent.js');
+            list = catalogProductsEvent || [];
+        } catch (e) {
+            console.warn("Failed to load catalogEvent:", e);
+        }
+    }
 
     let html = '';
     list.forEach(item => {
@@ -499,7 +510,7 @@ function renderV3Event() {
                 <div class="v3-product-img-wrap">
                     <span class="v3-badge-new" style="background:#111;">${tagText}</span>
                     ${hasMultiple ? '<span class="v3-badge-multi">2 Photos</span>' : ''}
-                    <img src="${frontImg}" alt="${ref}" class="v3-product-img" loading="lazy">
+                    <picture><source srcset="${frontImg.replace('.webp', '-400.webp')} 400w, ${frontImg.replace('.webp', '.webp')} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${frontImg.replace('.webp', '.jpg')}" alt="${ref}" class="v3-product-img" loading="lazy"></picture>
                 </div>
                 <div class="v3-product-footer">
                     <span class="v3-product-ref">${ref}</span>

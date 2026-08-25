@@ -47,6 +47,16 @@ export default defineConfig({
         admin: resolve(__dirname, 'src/admin/index.html'),
         links: resolve(__dirname, 'src/links.html'),
       },
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/@supabase')) {
+            return 'supabase';
+          }
+          if (id.includes('catalogEvent.js')) {
+            return 'catalogEvent';
+          }
+        },
+      },
     },
   },
 });

@@ -66,10 +66,10 @@ export function generateHtmlForProduct(p) {
         const badge = p.isNew ? '<span class="badge-new">New</span>' : '';
         let imgHtml = '';
         if (hasMultipleImages) {
-            imgHtml = `<img src="${frontImgSrc}" alt="${p.id} Front" class="img-front"><img src="${backImgSrc}" alt="${p.id} Back" class="img-back">`;
+            imgHtml = `<picture><source srcset="${frontImgSrc.replace('.webp', '-400.webp')} 400w, ${frontImgSrc} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${frontImgSrc.replace('.webp', '.jpg')}" alt="${p.id} Front" class="img-front" loading="lazy"></picture><picture><source srcset="${backImgSrc.replace('.webp', '-400.webp')} 400w, ${backImgSrc} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${backImgSrc.replace('.webp', '.jpg')}" alt="${p.id} Back" class="img-back" loading="lazy"></picture>`;
         } else {
             const filename = p.image ? p.image.substring(p.image.lastIndexOf('/') + 1) : p.id;
-            imgHtml = `<img src="${frontImgSrc}" alt="${filename}" class="img-front">`;
+            imgHtml = `<picture><source srcset="${frontImgSrc.replace('.webp', '-400.webp')} 400w, ${frontImgSrc} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${frontImgSrc.replace('.webp', '.jpg')}" alt="${filename}" class="img-front" loading="lazy"></picture>`;
         }
         return `            <div class="product-card ${p.edition}${noSlideClass}" data-ref="${p.id}">
                 <div class="image-container">${imgHtml}${badge ? badge : ''}</div>
@@ -83,9 +83,9 @@ export function generateHtmlForProduct(p) {
         
         let imgHtml = '';
         if (hasMultipleImages) {
-            imgHtml = `\n                    <img src="${frontImgSrc}" alt="${p.id} Front" class="img-front">\n                    <img src="${backImgSrc}" alt="${p.id} Back" class="img-back">`;
+            imgHtml = `\n                    <picture><source srcset="${frontImgSrc.replace('.webp', '-400.webp')} 400w, ${frontImgSrc} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${frontImgSrc.replace('.webp', '.jpg')}" alt="${p.id} Front" class="img-front" loading="lazy"></picture>\n                    <picture><source srcset="${backImgSrc.replace('.webp', '-400.webp')} 400w, ${backImgSrc} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${backImgSrc.replace('.webp', '.jpg')}" alt="${p.id} Back" class="img-back" loading="lazy"></picture>`;
         } else {
-            imgHtml = `\n                    <img src="${frontImgSrc}" alt="${p.id}" class="img-front">`;
+            imgHtml = `\n                    <picture><source srcset="${frontImgSrc.replace('.webp', '-400.webp')} 400w, ${frontImgSrc} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${frontImgSrc.replace('.webp', '.jpg')}" alt="${p.id}" class="img-front" loading="lazy"></picture>`;
         }
         return `            <div class="product-card ${p.edition}${noSlideClass}" data-ref="${p.id}">
                 <div class="image-container">
@@ -96,45 +96,45 @@ export function generateHtmlForProduct(p) {
     
     if (p.edition === 'prod-nameset') {
         return `            <div class="product-card ${p.edition}">
-                <div class="nameset-image-block"><img src="${encodedImg}" alt="Name Full Design"></div>
+                <div class="nameset-image-block"><picture><source srcset="${encodedImg}" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="Name Full Design" loading="lazy" decoding="async"></picture></div>
             </div>`;
     }
     
     if (p.edition === 'prod-sponsor') {
         return `            <div class="product-card ${p.edition}">
-                <div class="sponsor-image-block"><img src="${encodedImg}" alt="Sponsor Full Design">
+                <div class="sponsor-image-block"><picture><source srcset="${encodedImg}" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="Sponsor Full Design" loading="lazy" decoding="async"></picture>
                 </div>
             </div>`;
     }
     
     if (p.edition === 'prod-placementguide') {
         return `            <div class="product-card ${p.edition}">
-                <div class="placementguide-image-block"><img src="${encodedImg}" alt="Placement Guide"></div>
+                <div class="placementguide-image-block"><picture><source srcset="${encodedImg}" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="Placement Guide" loading="lazy" decoding="async"></picture></div>
             </div>`;
     }
     
     if (p.edition === 'prod-sizechart-shirt') {
         return `            <div class="product-card ${p.edition}">
-                <div class="sizechart-image-block"><img src="${encodedImg}" alt="Shirt Size Chart 1"></div>
+                <div class="sizechart-image-block"><picture><source srcset="${encodedImg.replace('.webp', '-400.webp')} 400w, ${encodedImg} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="Shirt Size Chart 1" loading="lazy" decoding="async"></picture></div>
             </div>`;
     }
     
     if (p.edition === 'prod-sizechart-pants') {
         const altNum = p.id.includes('2') ? '2' : '1';
         return `            <div class="product-card ${p.edition}">
-                <div class="sizechart-image-block"><img src="${encodedImg}" alt="Pants Size Chart ${altNum}"></div>
+                <div class="sizechart-image-block"><picture><source srcset="${encodedImg.replace('.webp', '-400.webp')} 400w, ${encodedImg} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="Pants Size Chart ${altNum}" loading="lazy" decoding="async"></picture></div>
             </div>`;
     }
     
     if (p.edition === 'prod-sizechart-muslimah') {
         const altNum = p.id.includes('2') ? '2' : '1';
         return `            <div class="product-card ${p.edition}">
-                <div class="sizechart-image-block"><img src="${encodedImg}" alt="Muslimah Size Chart ${altNum}"></div>
+                <div class="sizechart-image-block"><picture><source srcset="${encodedImg.replace('.webp', '-400.webp')} 400w, ${encodedImg} 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="Muslimah Size Chart ${altNum}" loading="lazy" decoding="async"></picture></div>
             </div>`;
     }
     
     if (p.edition === 'prod-material') {
-        const iconsHtml = p.icons.map(icon => `<img src="${resolveImagePath('Image/Material/' + icon + '.webp')}" alt="${icon}" class="stat-icon">`).join('');
+        const iconsHtml = p.icons.map(icon => `<img src="${resolveImagePath('Image/Material/' + icon + '.webp')}" alt="${icon}" class="stat-icon" loading="lazy" decoding="async">`).join('');
         const titleLine = `<h1 class="material-title">${p.title}${iconsHtml}</h1>`;
         
         let statsHtml = '';
@@ -149,7 +149,7 @@ export function generateHtmlForProduct(p) {
         
         return `            <div class="product-card ${p.edition}">
                 <div class="card-image-wrapper">
-                    <img src="${encodedImg}" alt="${p.id}" class="card-image">
+                    <picture><source srcset="${encodedImg}" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="${p.id}" class="card-image" loading="lazy" decoding="async"></picture>
                 </div>
                 <div class="card-content">
                     <div class="header-inline">
@@ -164,7 +164,7 @@ export function generateHtmlForProduct(p) {
         const imgClass = p.isButtonImage ? 'neck-image-button' : 'neck-image';
         return `            <div class="product-card ${p.edition}">
                 <div class="neck-image-wrapper">
-                    <img src="${encodedImg}" alt="${p.title}" class="${imgClass}">
+                    <picture><source srcset="${encodedImg}" type="image/webp"><img src="${encodedImg.replace('.webp', '.jpg')}" alt="${p.title}" class="${imgClass}" loading="lazy" decoding="async"></picture>
                 </div>
                 <div class="neck-content">
                     <div class="neck-title-container">
