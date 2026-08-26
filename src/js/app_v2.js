@@ -1518,6 +1518,7 @@ function filterByCategory(category) {
 
 // Auto-derive Reference Numbers
 function initReferenceNumbers() {
+    if (!catalogGrid) return;
     const allCards = catalogGrid.querySelectorAll('.product-card');
     allCards.forEach(card => {
         if (card.classList.contains('prod-2026') || card.classList.contains('prod-2025') || card.classList.contains('prod-event')) {
@@ -1756,7 +1757,7 @@ function ensureOwnDesignAtTopLeft(cards) {
         const ownCard = cards.splice(ownIdx, 1)[0];
         cards.unshift(ownCard);
     } else if (ownIdx === -1) {
-        const allCardsInGrid = Array.from(catalogGrid.querySelectorAll('.product-card'));
+        const allCardsInGrid = catalogGrid ? Array.from(catalogGrid.querySelectorAll('.product-card')) : [];
         const globalOwnCard = allCardsInGrid.find(card => {
             const ref = card.getAttribute('data-ref');
             const img = card.querySelector('img');
@@ -1772,6 +1773,7 @@ function ensureOwnDesignAtTopLeft(cards) {
 }
 
 function updateCurrentCards(edition) {
+    if (!catalogGrid) return;
     switch (edition) {
         case 'all': currentCards = [...allCardsAll]; break;
         case '2026': currentCards = [...allCards2026]; break;
@@ -1848,6 +1850,7 @@ function applySkeletonLoader(card) {
 }
 
 function displayPage(page, shouldScroll = true) {
+    if (!catalogGrid) return;
     const totalPages = Math.ceil(currentCards.length / cardsPerPage);
     if (page > totalPages && totalPages > 0) {
         page = totalPages;
@@ -1898,12 +1901,12 @@ function displayPage(page, shouldScroll = true) {
                 const img = card.querySelector('img');
                 const src = img ? decodeURIComponent(img.src) : '';
                 return ref === 'For Your Own Design' || src.includes('For Your Own Design');
-            }) || Array.from(catalogGrid.querySelectorAll('.product-card')).find(card => {
+            }) || (catalogGrid ? Array.from(catalogGrid.querySelectorAll('.product-card')).find(card => {
                 const ref = card.getAttribute('data-ref');
                 const img = card.querySelector('img');
                 const src = img ? decodeURIComponent(img.src) : '';
                 return ref === 'For Your Own Design' || src.includes('For Your Own Design');
-            });
+            }) : null);
 
             if (ownDesignCard) {
                 catalogGrid.prepend(ownDesignCard);
@@ -1952,6 +1955,7 @@ function setupPaginationButtons() {
 }
 
 function switchEdition(edition) {
+    if (!catalogGrid) return;
     currentEdition = edition;
 
     // Reset category filter when switching main sections
