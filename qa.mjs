@@ -40,20 +40,21 @@ async function runTest() {
       await hubBtn.click();
     }
 
-    await page.waitForSelector('.product-card', { timeout: 5000 });
-    const cards = await page.$$('.product-card');
+    await page.waitForSelector('.v3-product-card', { timeout: 5000 });
+    const cards = await page.$$('.v3-product-card');
     if (cards.length > 0) {
       console.log('Clicking first product card to open popup...');
       await cards[0].click();
-      await page.waitForSelector('.modal.show', { timeout: 3000 });
-      console.log('Modal opened successfully.');
+      await page.waitForSelector('#lightboxOverlay.active', { timeout: 3000 });
+      console.log('Lightbox opened successfully.');
       
-      // Close modal
-      const closeBtn = await page.$('.modal.show .btn-close');
+      // Close lightbox
+      const closeBtn = await page.$('#lightboxOverlay.active');
       if (closeBtn) {
-        await closeBtn.click();
+        // In V3, clicking the overlay itself closes the lightbox
+        await page.mouse.click(10, 10);
         await page.waitForTimeout(500); // Wait for transition
-        console.log('Modal closed.');
+        console.log('Lightbox closed.');
       }
     }
 
