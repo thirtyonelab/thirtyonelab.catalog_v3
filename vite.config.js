@@ -2,7 +2,14 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
 
+const buildDate = new Date().toISOString().split('T')[0];
+const gitSha = (process.env.CF_PAGES_COMMIT_SHA || 'local').slice(0, 8);
+const buildId = `${buildDate}+${gitSha}`;
+
 export default defineConfig({
+  define: {
+    __BUILD_ID__: JSON.stringify(buildId)
+  },
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',

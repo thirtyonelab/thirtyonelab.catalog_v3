@@ -30,7 +30,8 @@ try {
       col: event.colno || null,
       url: location.href,
       ua: navigator.userAgent,
-      ts: new Date().toISOString()
+      ts: new Date().toISOString(),
+      build: (typeof __BUILD_ID__ !== 'undefined' ? __BUILD_ID__ : 'unknown')
     });
   });
 
@@ -43,7 +44,8 @@ try {
       col: null,
       url: location.href,
       ua: navigator.userAgent,
-      ts: new Date().toISOString()
+      ts: new Date().toISOString(),
+      build: (typeof __BUILD_ID__ !== 'undefined' ? __BUILD_ID__ : 'unknown')
     });
   });
 } catch (e) {

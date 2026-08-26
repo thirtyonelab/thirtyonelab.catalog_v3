@@ -23,6 +23,7 @@ export async function onRequestPost(context) {
     const message = `
 <b>🚨 Storefront Error</b>
 <b>URL:</b> ${escapeHtml(body.url)}
+<b>Build:</b> ${escapeHtml(body.build || '(pre-stamp/stale)')}
 <b>Message:</b> ${escapeHtml(body.message)}
 <b>Source:</b> ${escapeHtml(body.source)}:${body.line}:${body.col}
 <b>Stack:</b>
